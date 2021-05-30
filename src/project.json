@@ -1,0 +1,66 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Roshambo",
+      "details": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis voluptatem, aliquid dolores quo iusto?",
+      "link": "https://roshambo.vercel.app/",
+      "githubLink": "github.com",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747639/portfolio/roshambo_ma5mbi.jpg",
+      "stack": [
+        {"classname": "fab fa-html5", "id": 111},
+        {"classname": "fab fa-js", "id": 112}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chat App UI",
+      "details": "A chat app landing page ui created with HTML and SCSS",
+      "link": "https://erudite.ng/",
+      "githubLink": "github.com",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747788/portfolio/chat-app_lxsyi8.jpg",
+      "stack": [
+        {"classname": "fab fa-html5", "id": 211},
+        {"classname": "fab fa-sass", "id": 212}
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Gp Calc+",
+      "details": "A simple calculator to help students calculate their GPA seamlessly",
+      "link": "https://gpcalculator.vercel.app/",
+      "githubLink": "github.com",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747683/portfolio/gpCalc_uercy1.png",
+      "stack": [
+        {"classname": "fab fa-html5", "id": 311},
+        {"classname": "fab fa-css3", "id": 312},
+        {"classname": "fab fa-js", "id": 313}
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Netfinder",
+      "details": "A simple website to display what Nigerian ISP Network a number belongs to.",
+      "link": "https://netfinder.vercel.app/",
+      "githubLink": "github.com",
+      "src": "/static/media/asset.54e40085.png",
+      "stack": [
+        {"classname": "fab fa-html5", "id": 411},
+        {"classname": "fab fa-css3", "id": 412},
+        {"classname": "fab fa-js", "id": 413}
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Erudite",
+      "details": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis voluptatem, aliquid dolores quo iusto?",
+      "link": "https://erudite.ng/",
+      "src": "/static/media/asset.54e40085.png",
+      "stack": [
+        {"classname": "fab fa-html5", "id": 511},
+        {"classname": "fab fa-css3", "id": 512},
+        {"classname": "fab fa-js", "id": 513}
+      ]
+    }
+  ]
+}

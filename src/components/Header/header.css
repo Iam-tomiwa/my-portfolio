@@ -1,0 +1,55 @@
+header {
+  width: 50%;
+  margin: 0rem auto 1rem auto;
+  text-align: center;
+  min-height: 600px;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-height: 620px) {
+  header {
+    height: auto;
+  }
+}
+.memoji {
+  width: 80px;
+  height: 80px;
+}
+header h1,
+header a,
+header h2,
+header button,
+header p {
+  margin: 1rem auto !important;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+header p {
+  font-size: 1.1rem;
+}
+@media (max-width: 800px) {
+  header {
+    width: 90%;
+    min-height: 95vh;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+    /* line-height: 3rem; */
+  }
+}
+.icons-wrap a {
+  margin: 0 0.5rem !important;
+}
+.icons-wrap i {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50px;
+}
