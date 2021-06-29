@@ -34,12 +34,15 @@
 .card .btn i {
   color: inherit;
 }
-.card .fa-github {
+.card .github {
   position: absolute;
   top: 0.8rem;
   right: 0.8rem;
   font-size: 1.8rem;
+}
+.card .github i{
   color: black;
+
 }
 .card .textWrap {
   padding: 0 1rem 1rem 1rem;

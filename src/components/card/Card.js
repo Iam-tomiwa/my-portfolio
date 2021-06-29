@@ -8,8 +8,8 @@ function Card(props) {
   return (
     <div className={classes.card}>
       {/* <img src={src} alt={src} /> */}
-      <div className={classes.img} style={style}></div>
       {props.children}
+      <div className={classes.img} style={style}></div>
       <div className={classes.textWrap}>
         <div className={classes.stacks}>
           {stack.map(el => (
