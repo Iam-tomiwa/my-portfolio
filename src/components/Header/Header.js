@@ -3,7 +3,7 @@ import profilePic from "../../images/emoji.png";
 
 function Header() {
   return (
-    <header>
+    <header id="home">
       <div className="wrap">
         <img className="memoji" src={profilePic} alt="profile pic" />
         <h2>Hi, I'm Tomiwa</h2>

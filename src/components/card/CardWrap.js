@@ -3,8 +3,8 @@ import classes from "./card.module.css";
 
 function CardWrap({data}) {
   return (
-    <section id="project" className={classes.cardSection}>
-      <h1>
+    <section className={classes.cardSection}>
+      <h1 id="project">
         <span className="underline">Projects</span>
       </h1>
       <div className={classes.cardsWrap}>

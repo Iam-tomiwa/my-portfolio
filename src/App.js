@@ -15,7 +15,9 @@ function App() {
   const [showNav, setShowNav] = useState(false);
   const [projects, setProjects] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [scaleClass, setScaleClass] = useState("app-wrap");
+  const [scaleStyle, setScaleStyle] = useState({
+    transform: "translate(0, 0%)",
+  });
 
   // hooks
   useEffect(() => {
@@ -24,12 +26,24 @@ function App() {
     console.log(cardSrc);
     setIsLoaded(true);
   }, []);
-
   useEffect(() => {
     if (showNav) {
-      setScaleClass("app-wrap scaleDown");
+      setScaleStyle({
+        transform: "translate(-75vw, 5vh)",
+        boxShadow: "6px 6px var(--sec-color)",
+        borderRadius: "5px",
+        top: "50%",
+        overflowX: "hidden",
+        overflowY: "auto",
+        height: "90vh",
+      });
     } else {
-      setScaleClass("app-wrap scaleUp");
+      setScaleStyle({
+        height: "max-content",
+        transform: "translate(0, 0%)",
+        top: "0",
+        overflow: "unset",
+      });
     }
   }, [showNav]);
 
@@ -38,22 +52,24 @@ function App() {
 
   return (
     <div className="App">
-      <NavSm click={() => toggleNavHandler()} />
+      <NavSm click={toggleNavHandler} />
       {isLoaded && (
-        <div className={scaleClass}>
+        <div style={scaleStyle} className="app-wrap">
           <Navbar click={toggleNavHandler} showNav={showNav} />
-          <Header />
-          <About />
+          <div className="inner">
+            <Header />
+            <About />
 
-          <CardWrap data={projects} />
-          <FormWrap />
-          <footer>
-            <p>
-              Made with <i className="fa fa-heart heart"></i> by Tomiwa
-            </p>
-            <p>Design Inspiration by Paul</p>
-            <p>Copyright: {new Date().getFullYear()}</p>
-          </footer>
+            <CardWrap data={projects} />
+            <FormWrap />
+            <footer>
+              <p>
+                Made with <i className="fa fa-heart heart"></i> by Tomiwa
+              </p>
+              <p>Design Inspiration by Paul</p>
+              <p>Copyright: {new Date().getFullYear()}</p>
+            </footer>
+          </div>
         </div>
       )}
     </div>

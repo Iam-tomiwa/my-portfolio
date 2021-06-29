@@ -7,8 +7,14 @@ function NavSm({click}) {
         <li>
           <button onClick={click}>X</button>
         </li>
-        <li onClick={click} className="nav-link">
-          <a href="#">Home</a>
+        <li
+          onClick={() => {
+            click();
+            window.scrollTo(0, 0);
+          }}
+          className="nav-link"
+        >
+          <a href="#home">Home</a>
         </li>
         <li onClick={click} className="nav-link">
           <a href="#about">About</a>

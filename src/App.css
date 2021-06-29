@@ -39,56 +39,35 @@
   min-height: 95vh;
   margin-top: 1rem;
 }
+.app-wrap .inner {
+  padding: 0 1rem 0 1rem;
+}
+section {
+  padding-top: 90px;
+  /* scroll-padding-top: 70px; */
+  scroll-snap-type: both mandatory;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 .app-wrap {
   background: var(--primary-color);
   margin: auto;
   width: 100vw;
+  scroll-padding-top: 60px;
+
   max-width: 1000px;
   position: relative;
   z-index: 100;
-  padding: 0 1rem 0 1rem;
   transition: 0.4s transform;
   animation-play-state: paused;
-}
-
-.scaleDown {
-  animation: scaleDown 0.4s ease forwards;
-}
-.scaleUp {
-  /* animation: scaleUp 0.4s ease forwards; */
   animation-delay: 2s !important;
   transform: translate(0, 0%) scale(1);
   top: 0;
   transition: transform 0.4s !important;
+
+  height: max-content;
 }
-@keyframes scaleDown {
-  from {
-    top: 0;
-    transform: translate(0, 0%) scale(1);
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100vh;
-  }
-  to {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100vh;
-    top: "50%";
-    transform: translate(-75vw, 0%) scale(1, 0.85);
-    box-shadow: 6px 6px var(--sec-color);
-    border-radius: 5px;
-  }
-}
-@keyframes scaleUp {
-  from {
-    top: "50%";
-    transform: translate(-75vw, -5%) scale(1, 0.85);
-  }
-  to {
-    top: 0;
-    transform: translate(0, 0%) scale(1);
-  }
-}
+
 .fa-external-link-alt {
   color: var(--primary-color);
 }
