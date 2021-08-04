@@ -59,8 +59,8 @@
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1620473426/desktop-preview_emxsgo.jpg",
       "stack": [
         {"classname": "fab fa-react", "id": 511},
-        {"classname": "fab fa-css3", "id": 512},
+        {"classname": "fab fa-css3", "id": 512}
       ]
-    },
+    }
   ]
 }
