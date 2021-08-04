@@ -1,7 +1,7 @@
 import "./form.css";
 function Form() {
   return (
-    <form data-netlify="true" method="POST" name="contact_tomiwa" className="form">
+    <form data-netlify="true" method="POST" name="contact_tomiwa" onSubmit="submit" className="form">
       <input type="hidden" name="form-name" value="contact_tomiwa" />
       <div className="flex-form-grp">
         <div className="form-group">
