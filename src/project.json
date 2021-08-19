@@ -3,9 +3,9 @@
     {
       "id": 1,
       "title": "Roshambo",
-      "details": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis voluptatem, aliquid dolores quo iusto?",
+      "details": "An intuitive rock paper scissors game",
       "link": "https://roshambo.vercel.app/",
-      "githubLink": "github.com",
+      "githubLink": "https://github.com/Iam-tomiwa/rock-paper-scissors",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747639/portfolio/roshambo_ma5mbi.jpg",
       "stack": [
         {"classname": "fab fa-html5", "id": 111},
@@ -17,7 +17,7 @@
       "title": "Chat App UI",
       "details": "A chat app landing page ui created with HTML and SCSS",
       "link": "https://erudite.ng/",
-      "githubLink": "github.com",
+      "githubLink": "https://github.com/Iam-tomiwa/chat-app-ui",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747788/portfolio/chat-app_lxsyi8.jpg",
       "stack": [
         {"classname": "fab fa-html5", "id": 211},
@@ -29,7 +29,7 @@
       "title": "Gp Calc+",
       "details": "A simple calculator to help students calculate their GPA seamlessly",
       "link": "https://gpcalculator.vercel.app/",
-      "githubLink": "github.com",
+      "githubLink": "https://github.com/Iam-tomiwa/Gp-Calc",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747683/portfolio/gpCalc_uercy1.png",
       "stack": [
         {"classname": "fab fa-html5", "id": 311},
@@ -42,7 +42,7 @@
       "title": "Netfinder",
       "details": "A simple website to display what Nigerian ISP Network a number belongs to.",
       "link": "https://netfinder.vercel.app/",
-      "githubLink": "github.com",
+      "githubLink": "https://github.com/Iam-tomiwa/Netfinder",
       "src": "/static/media/asset.54e40085.png",
       "stack": [
         {"classname": "fab fa-html5", "id": 411},
@@ -52,14 +52,14 @@
     },
     {
       "id": 5,
-      "title": "Erudite",
-      "details": " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure debitis voluptatem, aliquid dolores quo iusto?",
-      "link": "https://erudite.ng/",
-      "src": "/static/media/asset.54e40085.png",
+      "title": "Todo App",
+      "details": "a progressive web app for tracking day to day tasks with an intuitive interface. Featuring a drag and drop resorting functionality",
+      "link": "https://the-todo-app1.netlify.app/",
+      "githubLink": "https://github.com/Iam-tomiwa/react-todo-app",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1620473426/desktop-preview_emxsgo.jpg",
       "stack": [
-        {"classname": "fab fa-html5", "id": 511},
-        {"classname": "fab fa-css3", "id": 512},
-        {"classname": "fab fa-js", "id": 513}
+        {"classname": "fab fa-react", "id": 511},
+        {"classname": "fab fa-css3", "id": 512}
       ]
     }
   ]
