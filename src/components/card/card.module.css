@@ -1,5 +1,5 @@
 .cardSection {
-  margin: 2rem 0;
+  margin: 2rem auto;
   text-align: center;
   position: relative;
 }
@@ -8,28 +8,26 @@
   font-weight: 600;
 }
 .card {
-  width: 42%;
+  width: 46%;
   display: inline-block;
   background: var(--card-color);
   border-radius: 5px;
-  margin: 1rem 1rem;
+  margin: 2rem 0;
   text-align: left;
   position: relative;
-  /* height: max-content; */
   box-shadow: 2px 2px 15px var(--box-shadow);
-  /* 
-  position: relative;
-  z-index: -1; */
 }
 .card:nth-child(even) {
   top: 5rem;
+  margin-left: auto;
 }
 .card .btn {
-  border-radius: 6px;
+  /* border-radius: 6px; */
   display: flex;
   justify-content: space-between;
-  /* margin: 1rem auto; */
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 2rem;
+  margin: 1.5rem 0;
+  width: auto;
 }
 .card .btn i {
   color: inherit;
@@ -40,12 +38,11 @@
   right: 0.8rem;
   font-size: 1.8rem;
 }
-.card .github i{
+.card .github i {
   color: black;
-
 }
 .card .textWrap {
-  padding: 0 1rem 1rem 1rem;
+  padding: 0 1.5rem 1rem 1.5rem;
 }
 .card p {
   font-size: 0.9rem;
@@ -88,6 +85,8 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
 .card:last-child:nth-child(even) {
   margin-bottom: 5rem;

@@ -1,12 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Plus Jakarta Sans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   overflow-x: hidden;
+}
+textarea::placeholder,
+input::placeholder {
+  font-family: "Plus Jakarta Sans";
 }
 body::after,
 body::before {
@@ -30,6 +32,7 @@ body::after {
     display: none;
   }
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -38,6 +41,9 @@ code {
 a {
   text-decoration: none;
   color: inherit;
+}
+p {
+  line-height: 2rem !important;
 }
 .fa-html5 {
   color: #fa0606;

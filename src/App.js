@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import About from "./components/about/About";
 import CardWrap from "./components/card/CardWrap";
 import FormWrap from "./components/form/formWrap";
+import "@fontsource/plus-jakarta-sans";
 
 import {useState, useEffect} from "react";
 import cardSrc from "./images/asset.png";
@@ -26,6 +27,7 @@ function App() {
     console.log(cardSrc);
     setIsLoaded(true);
   }, []);
+
   useEffect(() => {
     if (showNav) {
       setScaleStyle({
@@ -64,10 +66,10 @@ function App() {
             <FormWrap />
             <footer>
               <p>
-                Made with <i className="fa fa-heart heart"></i> by Tomiwa
+                <span>Made with</span> <i className="fa fa-heart heart"></i>{" "}
+                <span>by Tomiwa.</span>
               </p>
               <p>Design Inspiration by Paul</p>
-              <p>Copyright: {new Date().getFullYear()}</p>
             </footer>
           </div>
         </div>

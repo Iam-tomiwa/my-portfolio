@@ -24,10 +24,13 @@ header button,
 header p {
   margin: 1rem auto !important;
 }
+h2 {
+  font-size: 1.4rem;
+}
 h1 {
   font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.5rem;
+  font-size: 2.5rem;
+  line-height: 3.6rem;
 }
 header p {
   font-size: 1.1rem;

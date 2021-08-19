@@ -75,9 +75,10 @@ textarea {
   width: 100%;
   height: 45px;
   margin-top: 1rem;
-  border: 1px solid #a3a2a2;
+  border: none;
+  border-bottom: 1px solid #a3a2a2;
   transition: 0.5s;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   padding: 0.5rem;
   background-color: transparent;
 }
@@ -85,7 +86,6 @@ input::placeholder,
 textarea::placeholder {
   color: #5a5a5a;
   transition: 0.4s;
-  font-family: "Poppins";
 }
 
 .flex-form-grp .form-group {
@@ -93,7 +93,7 @@ textarea::placeholder {
   margin: 0.9rem 0 0 0;
 }
 textarea {
-  height: 200px;
+  height: 100px;
   resize: none;
   padding: 0.8rem 0.6rem;
 }
