@@ -17,7 +17,7 @@ function About() {
           My name is <strong>Emmanuel Ajayi</strong> popularly known as{" "}
           <strong>Tomiwa</strong>. I'm a front-end web developer with a knack
           for beautiful and interactive webites.{" "}
-          <em>( PS: I write technical articles occasionally ).</em>
+          {/* <em>( PS: I write technical articles occasionally ).</em> */}
         </p>
         <p>
           I love solving little problems or exploring with code, in my free time
@@ -29,8 +29,10 @@ function About() {
           Lagos.
         </p>
         <a
-          href="https://drive.google.com/file/d/1a2BPyQQS4x0qgXzyJMbNzxjyglqPcxJO/view?usp=sharing"
+          href="https://drive.google.com/file/d/1mMCNRDJszQLzYm1NsiGQtQAVgxN2AqNx/view?usp=sharing"
           download
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <button className="btn"> Download Resume</button>
         </a>

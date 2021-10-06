@@ -1,8 +1,10 @@
-* {
+*,
+::placeholder {
   padding: 0;
   margin: 0;
   color: var(--text-color);
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 :root {
   --sec-color: #fff;
@@ -20,6 +22,14 @@
 
 .App {
   background: var(--primary-color);
+}
+p,
+span {
+  font-weight: 300;
+}
+section h1 span,
+section h2 span {
+  font-weight: 500;
 }
 .underline {
   position: relative;
@@ -73,8 +83,8 @@ section {
 .btn {
   background: var(--sec-color);
   color: var(--primary-color);
-  padding: 0.8rem 2.5rem;
-  border-radius: 50px;
+  padding: 0.5rem 2.5rem;
+  border-radius: 60px;
   text-decoration: none;
   transition: 0.3s;
   border: none;
@@ -85,6 +95,10 @@ section {
   outline: none;
   cursor: pointer;
 }
+.btn i {
+  color: var(--primary-color);
+}
+
 .btn a {
   width: 100%;
   height: 100%;
@@ -98,7 +112,7 @@ section {
   background: transparent;
   border: 1px solid var(--sec-color);
 }
-.btn:hover .fa-external-link-alt {
+.btn:hover i {
   color: var(--sec-color);
 }
 .btn:disabled {
@@ -162,5 +176,48 @@ footer .heart {
   }
   .app-wrap {
     max-width: 1300px;
+  }
+}
+
+/* displayMsg styles */
+.msg {
+  position: fixed;
+  background-color: rgb(4, 182, 4);
+  border-radius: 5px;
+  color: white;
+  margin: 0.5rem auto;
+  transform: translateX(150vw);
+  padding: 0.5rem 4rem 0.5rem 2rem;
+  width: auto;
+  display: block;
+  top: 0.5rem;
+  right: 2rem;
+  z-index: 150;
+  -webkit-animation: msg 0.5s ease forwards;
+  animation: msg 0.5s ease forwards;
+}
+
+@keyframes msg {
+  to {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 500px) {
+  .msg {
+    position: fixed;
+    width: 95%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1.5rem;
+    transform: translate(0);
+    -webkit-clip-path: inset(0 0 100% 0);
+    clip-path: inset(0 0 100% 0);
+    animation: sm-msg 0.5s ease forwards;
+  }
+  @keyframes sm-msg {
+    to {
+      clip-path: inset(0 0 0 0);
+    }
   }
 }

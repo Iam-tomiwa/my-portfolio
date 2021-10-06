@@ -17,23 +17,29 @@ header {
   width: 80px;
   height: 80px;
 }
+header .memoji {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
 header h1,
 header a,
 header h2,
 header button,
 header p {
-  margin: 1rem auto !important;
+  margin: 0.8rem auto !important;
 }
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 h1 {
   font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3.6rem;
+  font-size: 2.3rem;
+  line-height: 3.3rem;
 }
 header p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 @media (max-width: 800px) {
   header {

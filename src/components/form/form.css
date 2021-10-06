@@ -87,7 +87,10 @@ textarea::placeholder {
   color: #5a5a5a;
   transition: 0.4s;
 }
-
+input:focus,
+textarea:focus {
+  border-color: --after-color;
+}
 .flex-form-grp .form-group {
   width: 48%;
   margin: 0.9rem 0 0 0;
@@ -126,7 +129,7 @@ textarea {
   .container h2::before {
     display: none;
   }
-  .container .left-wrap * {
+  .container .left-wrap > * {
     margin: 0.5rem auto;
   }
   .container .left-wrap {

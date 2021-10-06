@@ -39,7 +39,7 @@
 .section h2 {
   font-size: 1.6rem;
 }
-.left-wrap * {
+.left-wrap > * {
   margin: 1.2rem 0;
 }
 @media (max-width: 760px) {

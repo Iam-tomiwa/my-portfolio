@@ -30,7 +30,7 @@
       "details": "A simple calculator to help students calculate their GPA seamlessly",
       "link": "https://gpcalculator.vercel.app/",
       "githubLink": "https://github.com/Iam-tomiwa/Gp-Calc",
-      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747683/portfolio/gpCalc_uercy1.png",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633517687/portfolio/gpcalc_h7ztya.png",
       "stack": [
         {"classname": "fab fa-html5", "id": 311},
         {"classname": "fab fa-css3", "id": 312},
@@ -43,7 +43,7 @@
       "details": "A simple website to display what Nigerian ISP Network a number belongs to.",
       "link": "https://netfinder.vercel.app/",
       "githubLink": "https://github.com/Iam-tomiwa/Netfinder",
-      "src": "/static/media/asset.54e40085.png",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633517689/portfolio/netfinder_qgavlg.png",
       "stack": [
         {"classname": "fab fa-html5", "id": 411},
         {"classname": "fab fa-css3", "id": 412},
@@ -60,6 +60,18 @@
       "stack": [
         {"classname": "fab fa-react", "id": 511},
         {"classname": "fab fa-css3", "id": 512}
+      ]
+    },
+    {
+      "id": 6,
+      "title": "My Portfolio",
+      "details": "I decided to build my portfolio with react after getting inspired by a design I saw on Dribble by Oguz (shot link below)",
+      "link": "https://dribbble.com/shots/14397179-Portfolio-Landing-Page-Dark-Mode",
+      "githubLink": "https://github.com/Iam-tomiwa/react-todo-app",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633517687/portfolio/portfolio_pzfpah.png",
+      "stack": [
+        {"classname": "fab fa-react", "id": 611},
+        {"classname": "fab fa-css3", "id": 612}
       ]
     }
   ]

@@ -23,7 +23,7 @@ function Card(props) {
         <p className={classes.details}>{details}</p>
         <a target="_blank" rel="noopener noreferrer" href={link}>
           <button className={`${classes.btn} btn`}>
-            View Site &nbsp; <i className="fas fa-external-link-alt"></i>
+            View &nbsp; <i className="fas fa-external-link-alt"></i>
           </button>
         </a>
       </div>

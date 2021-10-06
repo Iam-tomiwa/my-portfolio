@@ -69,7 +69,17 @@ function App() {
                 <span>Made with</span> <i className="fa fa-heart heart"></i>{" "}
                 <span>by Tomiwa.</span>
               </p>
-              <p>Design Inspiration by Paul</p>
+              <p>
+                Design Inspiration by{" "}
+                <a
+                  style={{margin: "0 0.3rem", textDecoration: "underline"}}
+                  href="https://dribbble.com/shots/14397179-Portfolio-Landing-Page-Dark-Mode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Oguz Yagiz
+                </a>{" "}
+              </p>
             </footer>
           </div>
         </div>
