@@ -8,7 +8,6 @@ import FormWrap from "./components/form/formWrap";
 import "@fontsource/plus-jakarta-sans";
 
 import {useState, useEffect} from "react";
-import cardSrc from "./images/asset.png";
 // import Card from "./components/card/card";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
   useEffect(() => {
     let jsonData = require("./project.json");
     setProjects(jsonData.projects);
-    console.log(cardSrc);
     setIsLoaded(true);
   }, []);
 
