@@ -2,13 +2,13 @@ import "./form.css";
 function Form() {
   return (
     <form
-      netlify
+      // netlify
       method="post"
       name="contact_tomiwa"
-      onSubmit="submit"
+      // onSubmit="submit"
       className="form"
     >
-      <input type="hidden" name="form-name" value="contact_tomiwa" />
+      {/* <input type="hidden" name="form-name" value="contact_tomiwa" /> */}
       <div className="flex-form-grp">
         <div className="form-group">
           <label htmlFor="fName">Firstname:</label>

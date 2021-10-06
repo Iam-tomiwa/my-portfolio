@@ -54,7 +54,7 @@
       "id": 5,
       "title": "Todo App",
       "details": "a progressive web app for tracking day to day tasks with an intuitive interface. Featuring a drag and drop resorting functionality",
-      "link": "https://the-todo-app1.netlify.app/",
+      "link": "https://my-to-dos.vercel.app/",
       "githubLink": "https://github.com/Iam-tomiwa/react-todo-app",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1620473426/desktop-preview_emxsgo.jpg",
       "stack": [
