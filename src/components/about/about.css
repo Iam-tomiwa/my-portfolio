@@ -13,13 +13,11 @@
   width: 80%;
   height: 60vh;
   position: relative;
-  min-height: 350px;
-  max-height: 450px;
-  /* background-color: var(--card-color); */
-  /* background-color: rgb(32, 32, 32); */
+  min-height: 380px;
+  max-height: 380px;
   border: 1px solid var(--sec-color);
 }
-/* .aboutImg::after {
+.aboutImg::after {
   content: "";
   border: 1px solid var(--sec-color);
   position: absolute;
@@ -28,7 +26,7 @@
   left: -1rem;
   width: 100%;
   height: 100%;
-} */
+}
 .section img {
   width: 100%;
   height: 100%;
@@ -40,7 +38,21 @@
   font-size: 1.6rem;
 }
 .left-wrap > * {
-  margin: 1.2rem 0;
+  margin: 1rem 0;
+}
+.left-wrap h3 {
+  margin-bottom: 0rem;
+}
+.left-wrap ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0 0.9rem;
+  margin-bottom: 1rem;
+}
+.left-wrap ul li {
+  margin: 0.5rem;
 }
 @media (max-width: 760px) {
   .section {
@@ -52,7 +64,7 @@
     width: 90%;
     max-width: 350px;
     margin: 0 auto 3rem auto;
-    max-height: 300px;
+    max-height: 350px;
     min-height: 200px;
   }
   .section > div {

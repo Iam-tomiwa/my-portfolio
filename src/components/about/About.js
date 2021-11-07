@@ -1,4 +1,4 @@
-import aboutImg from "../../images/about.png";
+import aboutImg from "../../assets/images/yo.jpg";
 import "./about.css";
 
 function About() {
@@ -28,6 +28,16 @@ function About() {
           I'm also a first class student of Microbiology at the University of
           Lagos.
         </p>
+        <h3>Skills:</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>SCSS</li>
+          <li>REACT JS</li>
+          <li>REDUX</li>
+          <li>FIREBASE</li>
+        </ul>
         <a
           href="https://drive.google.com/file/d/1mMCNRDJszQLzYm1NsiGQtQAVgxN2AqNx/view?usp=sharing"
           download

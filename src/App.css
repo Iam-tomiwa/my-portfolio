@@ -4,7 +4,7 @@
   margin: 0;
   color: var(--text-color);
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "PlusJakarta Regular", sans-serif;
 }
 :root {
   --sec-color: #fff;
@@ -17,9 +17,30 @@
   scroll-behavior: smooth;
   --card-color: rgb(18, 19, 20);
   --box-shadow: #0e0e0e;
-  scroll-padding-top: 60px;
+  /* scroll-padding-top: 0px; */
 }
-
+@font-face {
+  font-family: "PlusJakarta";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("./assets/font/PlusJakartaDisplay-Bold.otf");
+}
+@font-face {
+  font-family: "PlusJakarta Regular";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("./assets/font/PlusJakartaDisplay-Regular.otf");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.btn {
+  font-family: "PlusJakarta", sans-serif;
+}
 .App {
   background: var(--primary-color);
 }
@@ -73,7 +94,6 @@ section {
   transform: translate(0, 0%) scale(1);
   top: 0;
   transition: transform 0.4s !important;
-
   height: max-content;
 }
 

@@ -1,5 +1,5 @@
 import Form from "./Form";
-import profilePic from "../../images/emoji.png";
+import profilePic from "../../assets/images/emoji.png";
 
 function formWrap() {
   return (

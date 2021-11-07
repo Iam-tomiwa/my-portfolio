@@ -1,5 +1,5 @@
 import "./header.css";
-import profilePic from "../../images/about.jpg";
+import profilePic from "../../assets/images/about.jpg";
 
 function Header() {
   return (

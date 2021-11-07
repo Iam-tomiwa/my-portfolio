@@ -5,7 +5,6 @@ import Header from "./components/Header/Header";
 import About from "./components/about/About";
 import CardWrap from "./components/card/CardWrap";
 import FormWrap from "./components/form/formWrap";
-import "@fontsource/plus-jakarta-sans";
 
 import {useState, useEffect} from "react";
 // import Card from "./components/card/card";
@@ -21,7 +20,7 @@ function App() {
 
   // hooks
   useEffect(() => {
-    let jsonData = require("./project.json");
+    let jsonData = require("./assets/project.json");
     setProjects(jsonData.projects);
     setIsLoaded(true);
   }, []);

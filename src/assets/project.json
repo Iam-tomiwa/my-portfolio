@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Roshambo",
-      "details": "An intuitive rock paper scissors game",
+      "details": "An intuitive rock paper scissors game, I learnt alot about OOP and DOM propagation and functional programming while building it.",
       "link": "https://roshambo.vercel.app/",
       "githubLink": "https://github.com/Iam-tomiwa/rock-paper-scissors",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747639/portfolio/roshambo_ma5mbi.jpg",
@@ -15,7 +15,7 @@
     {
       "id": 2,
       "title": "Chat App UI",
-      "details": "A chat app landing page ui created with HTML and SCSS",
+      "details": "A chat app landing page ui created with HTML and SCSS, I had fun building it because I was learning sass at that time and it reinstated my knowledge on css positioning and other properties.",
       "link": "https://chat-app-ui-beige.vercel.app/",
       "githubLink": "https://github.com/Iam-tomiwa/chat-app-ui",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747788/portfolio/chat-app_lxsyi8.jpg",
@@ -27,7 +27,7 @@
     {
       "id": 3,
       "title": "Gp Calc+",
-      "details": "A simple calculator to help students calculate their GPA seamlessly",
+      "details": "A simple calculator to help students calculate their GPA seamlessly. This project helped me learn higher order functions and functional programming.",
       "link": "https://gpcalculator.vercel.app/",
       "githubLink": "https://github.com/Iam-tomiwa/Gp-Calc",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633517687/portfolio/gpcalc_h7ztya.png",
@@ -40,7 +40,7 @@
     {
       "id": 4,
       "title": "Netfinder",
-      "details": "A simple website to display what Nigerian ISP Network a number belongs to.",
+      "details": "A simple website to display what Nigerian ISP Network a number belongs to. It was my first Javascript project :).",
       "link": "https://netfinder.vercel.app/",
       "githubLink": "https://github.com/Iam-tomiwa/Netfinder",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633517689/portfolio/netfinder_qgavlg.png",
@@ -53,7 +53,7 @@
     {
       "id": 5,
       "title": "Todo App",
-      "details": "a progressive web app for tracking day to day tasks with an intuitive interface. Featuring a drag and drop resorting functionality",
+      "details": "a progressive web app for tracking day to day tasks with an intuitive interface. Featuring a drag and drop resorting functionality, I learnt alot about  react hooks and context API on this project.",
       "link": "https://my-to-dos.vercel.app/",
       "githubLink": "https://github.com/Iam-tomiwa/react-todo-app",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1620473426/desktop-preview_emxsgo.jpg",
@@ -65,13 +65,25 @@
     {
       "id": 6,
       "title": "My Portfolio",
-      "details": "I decided to build my portfolio with react after getting inspired by a design I saw on Dribble by Oguz (shot link below)",
+      "details": "I decided to build my portfolio with react after getting inspired by a design I saw on Dribble by Oguz (shot link below).",
       "link": "https://dribbble.com/shots/14397179-Portfolio-Landing-Page-Dark-Mode",
       "githubLink": "https://github.com/Iam-tomiwa/react-todo-app",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633524509/portfolio/portfolio_d8xa9j.png",
       "stack": [
         {"classname": "fab fa-react", "id": 611},
         {"classname": "fab fa-css3", "id": 612}
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Options Education",
+      "details": "I built  landing page for an educational agency that processes application to study abroad, I had fun learning firebase to handle the form.",
+      "link": "https://www.optionsedu.org/",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1636322382/portfolio/www.optionsedu.org__macbook_h3tjqm.png",
+      "stack": [
+        {"classname": "fab fa-html5", "id": 711},
+        {"classname": "fab fa-sass", "id": 712},
+        {"classname": "fab fa-js", "id": 713}
       ]
     }
   ]
