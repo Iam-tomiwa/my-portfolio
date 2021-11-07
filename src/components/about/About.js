@@ -37,6 +37,7 @@ function About() {
           <li>REACT JS</li>
           <li>REDUX</li>
           <li>FIREBASE</li>
+          <li>MATERIAL UI</li>
         </ul>
         <a
           href="https://drive.google.com/file/d/1mMCNRDJszQLzYm1NsiGQtQAVgxN2AqNx/view?usp=sharing"
