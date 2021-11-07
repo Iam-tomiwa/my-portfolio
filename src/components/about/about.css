@@ -11,10 +11,8 @@
 }
 .aboutImg {
   width: 80%;
-  height: 60vh;
   position: relative;
-  min-height: 380px;
-  max-height: 380px;
+  padding-top: 90%;
   border: 1px solid var(--sec-color);
 }
 .aboutImg::after {
@@ -32,6 +30,9 @@
   height: 100%;
   margin-top: -1rem;
   margin-left: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: black;
 }
 .section h2 {
@@ -61,12 +62,13 @@
     flex-direction: column;
     justify-content: space-evenly;
   }
+  .aboutImg::after {
+    display: none;
+  }
   .section .aboutImg {
     width: 90%;
     max-width: 350px;
     margin: 0 auto 3rem auto;
-    max-height: 350px;
-    min-height: 200px;
   }
   .section > div {
     width: 100%;
