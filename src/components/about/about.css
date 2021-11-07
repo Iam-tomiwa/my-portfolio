@@ -41,7 +41,8 @@
   margin: 1rem 0;
 }
 .left-wrap h3 {
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
 }
 .left-wrap ul {
   display: grid;
