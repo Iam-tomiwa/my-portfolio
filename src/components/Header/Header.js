@@ -19,16 +19,32 @@ function Header() {
           <button className="btn">Connect With Me</button>
         </a>
         <div className="icons-wrap">
-          <a href="https://wa.me/+2348154050552">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wa.me/+2348154050552"
+          >
             <i className="fab fa-whatsapp"></i>
           </a>
-          <a href="https://www.twitter.com/I_am_Ajayii/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.twitter.com/I_am_Ajayii/"
+          >
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="https://github.com/Iam-tomiwa">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/Iam-tomiwa"
+          >
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/ajayi-emmanuel-395499186/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/ajayi-emmanuel-395499186/"
+          >
             <i className="fab fa-linkedin"></i>
           </a>
         </div>

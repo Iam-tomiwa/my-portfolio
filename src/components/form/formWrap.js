@@ -37,7 +37,11 @@ function formWrap() {
             >
               <i className="far fa-envelope"></i>
             </a>
-            <a href="https://www.linkedin.com/in/ajayi-emmanuel-395499186/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/ajayi-emmanuel-395499186/"
+            >
               <i className="fab fa-linkedin"></i>
             </a>
           </div>
