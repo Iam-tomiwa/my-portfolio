@@ -28,8 +28,8 @@ function Header() {
           <a href="https://github.com/Iam-tomiwa">
             <i className="fab fa-github"></i>
           </a>
-          <a href="https://dev.to/iamtomiwa">
-            <i className="fab fa-dev"></i>
+          <a href="https://www.linkedin.com/in/ajayi-emmanuel-395499186/">
+            <i className="fab fa-linkedin"></i>
           </a>
         </div>
       </div>

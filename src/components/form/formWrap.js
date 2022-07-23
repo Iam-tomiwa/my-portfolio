@@ -37,8 +37,8 @@ function formWrap() {
             >
               <i className="far fa-envelope"></i>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="/">
-              <i className="fab fa-dev"></i>
+            <a href="https://www.linkedin.com/in/ajayi-emmanuel-395499186/">
+              <i className="fab fa-linkedin"></i>
             </a>
           </div>
         </div>
