@@ -1,18 +1,6 @@
 {
   "projects": [
     {
-      "id": 1,
-      "title": "Roshambo",
-      "details": "An intuitive rock paper scissors game, I learnt alot about OOP and DOM propagation and functional programming while building it.",
-      "link": "https://roshambo.vercel.app/",
-      "githubLink": "https://github.com/Iam-tomiwa/rock-paper-scissors",
-      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747639/portfolio/roshambo_ma5mbi.jpg",
-      "stack": [
-        {"classname": "fab fa-html5", "id": 111},
-        {"classname": "fab fa-js", "id": 112}
-      ]
-    },
-    {
       "id": 2,
       "title": "Chat App UI",
       "details": "A chat app landing page ui created with HTML and SCSS, I had fun building it because I was learning sass at that time and it reinstated my knowledge on css positioning and other properties.",
@@ -51,9 +39,21 @@
       ]
     },
     {
+      "id": 1,
+      "title": "Roshambo",
+      "details": "An intuitive rock paper scissors game, I learnt alot about OOP and DOM propagation and functional programming while building it.",
+      "link": "https://roshambo.vercel.app/",
+      "githubLink": "https://github.com/Iam-tomiwa/rock-paper-scissors",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747639/portfolio/roshambo_ma5mbi.jpg",
+      "stack": [
+        {"classname": "fab fa-html5", "id": 111},
+        {"classname": "fab fa-js", "id": 112}
+      ]
+    },
+    {
       "id": 5,
       "title": "Todo App",
-      "details": "a progressive web app for tracking day to day tasks with an intuitive interface. Featuring a drag and drop resorting functionality, I learnt alot about  react hooks and context API on this project.",
+      "details": "A progressive web app for tracking day to day tasks with an intuitive interface. Featuring a drag and drop resorting functionality, I learnt alot about  react hooks and context API on this project.",
       "link": "https://my-to-dos.vercel.app/",
       "githubLink": "https://github.com/Iam-tomiwa/react-todo-app",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1620473426/desktop-preview_emxsgo.jpg",
@@ -65,7 +65,7 @@
     {
       "id": 6,
       "title": "My Portfolio",
-      "details": "I decided to build my portfolio with react after getting inspired by a design I saw on Dribble by Oguz (shot link below).",
+      "details": "I decided to build my portfolio with react after getting inspired by a design I saw on Dribble by Oguz (shot link below). PS: Check out the mobile nav animation :)",
       "link": "https://dribbble.com/shots/14397179-Portfolio-Landing-Page-Dark-Mode",
       "githubLink": "https://github.com/Iam-tomiwa/react-todo-app",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633524509/portfolio/portfolio_d8xa9j.png",
@@ -85,6 +85,39 @@
         {"classname": "fab fa-sass", "id": 712},
         {"classname": "fab fa-js", "id": 713}
       ]
+    },
+    {
+      "id": 8,
+      "title": "Surpaxx Technology",
+      "details": "I built  an info website for a technology consultancy agency.",
+      "link": "https://surpaxxtech.com/",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1640548455/Frame_18_k4dbfm.png",
+      "stack": [
+        {"classname": "fab fa-react", "id": 811},
+        {"classname": "fab fa-sass", "id": 812},
+        {"classname": "fab fa-js", "id": 813}
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Auctions Village",
+      "details": "Worked with a team on building an auctioning platform featuring a user section, chats section and an admin dashboard. I learnt a lot about react optimisation techniques using useCallback and useMemo hooks as well as using redux toolkit.",
+      "link": "https://app.auctionsvillage.com/",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1658606268/portfolio/smartmockups_l5ybbn2k_bbu6az.jpg",
+      "stack": [
+        {"classname": "fab fa-react", "id": 911},
+        {"classname": "fab fa-sass", "id": 912}
+      ],
+      "otherStacks": ["/mui-icon.png", "/redux-icon.svg"]
+    },
+    {
+      "id": 10,
+      "title": "The Raji Project  :)",
+      "details": "I was learning the next.js framework and typescript, then I decided to practice and play around by building a portfolio website for a friend. I especially had fun combining design ideas from various websites online and animating the elements.",
+      "link": "https://raji-eta.vercel.app/",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1658609612/portfolio/smartmockups_l5ydbxxa_nxwqml.jpg",
+      "stack": [{"classname": "fab fa-sass", "id": 1012}],
+      "otherStacks": ["/next-icon.png", "tailwind-css-icon.png", "/ts-icon.png"]
     }
   ]
 }

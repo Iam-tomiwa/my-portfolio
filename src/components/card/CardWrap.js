@@ -16,6 +16,7 @@ function CardWrap({data}) {
             link={el.link}
             key={el.id}
             stack={el.stack}
+            otherStacks={el?.otherStacks}
           >
             {el.githubLink && (
               <a className={classes.github} href={el.githubLink}>

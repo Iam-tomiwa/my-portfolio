@@ -1,7 +1,7 @@
 import classes from "./card.module.css";
 
 function Card(props) {
-  let {src, stack, title, details, link} = props;
+  let {src, stack, title, details, link, otherStacks} = props;
   const style = {
     backgroundImage: `url(${src})`,
   };
@@ -17,6 +17,16 @@ function Card(props) {
               <i className={el.classname}></i>
             </span>
           ))}
+          {otherStacks &&
+            otherStacks.map(el => (
+              <span key={`stack_icon_${el}`}>
+                <img
+                  style={el.includes("next") ? {padding: "0"} : null}
+                  src={el}
+                  alt={el}
+                />
+              </span>
+            ))}
         </div>
 
         <h2 className={classes.title}>{title}</h2>

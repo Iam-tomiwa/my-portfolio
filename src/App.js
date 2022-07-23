@@ -21,7 +21,7 @@ function App() {
   // hooks
   useEffect(() => {
     let jsonData = require("./assets/project.json");
-    setProjects(jsonData.projects);
+    setProjects(jsonData.projects.reverse());
     setIsLoaded(true);
   }, []);
 

@@ -80,9 +80,15 @@
   font-size: 1.8rem;
   padding: 0.5rem;
 }
+.stacks img {
+  width: 100%;
+  height: 100%;
+  padding: 0.6rem;
+}
 .cardsWrap {
   display: flex;
   justify-content: flex-start;
+  /* align-items: center */
   flex-wrap: wrap;
   width: 100%;
   max-width: 1000px;

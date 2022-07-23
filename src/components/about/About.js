@@ -32,12 +32,16 @@ function About() {
         <ul>
           <li>HTML</li>
           <li>CSS</li>
-          <li>JAVASCRIPT</li>
           <li>SCSS</li>
-          <li>REACT JS</li>
-          <li>REDUX</li>
-          <li>FIREBASE</li>
+          <li>TAILWIND CSS</li>
           <li>MATERIAL UI</li>
+          <li>JAVASCRIPT</li>
+          <li>TYPESCRIPT</li>
+          <li>REACT JS</li>
+          <li>NEXT JS</li>
+          <li>REDUX</li>
+          <li>REDUX TOOLKIT</li>
+          <li>GRAPH QL</li>
         </ul>
         <a
           href="https://drive.google.com/file/d/1mMCNRDJszQLzYm1NsiGQtQAVgxN2AqNx/view?usp=sharing"
