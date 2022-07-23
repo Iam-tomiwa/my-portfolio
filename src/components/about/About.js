@@ -44,7 +44,7 @@ function About() {
           <li>GRAPH QL</li>
         </ul>
         <a
-          href="https://drive.google.com/file/d/19xGjcTQvKglBm9HoVHQVK8YqtqhssQFc/view?usp=sharing"
+          href="https://drive.google.com/file/d/1ScpZxluVKrVWpbZhZJ4TjTqbuV7zuzne/view?usp=sharing"
           download
           target="_blank"
           rel="noopener noreferrer"
