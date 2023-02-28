@@ -1,12 +1,18 @@
+import ScrollAnimation from "react-animate-on-scroll";
 import classes from "./card.module.css";
 
 function Card(props) {
-  let {src, stack, title, details, link, otherStacks} = props;
+  let {src, stack, title, details, link, otherStacks, delay} = props;
   const style = {
     backgroundImage: `url(${src})`,
   };
   return (
-    <div className={classes.card}>
+    <ScrollAnimation
+      animateOnce={true}
+      animateIn="fadeInUp"
+      delay={delay}
+      className={classes.card}
+    >
       {/* <img src={src} alt={src} /> */}
       {props.children}
       <div className={classes.img} style={style}></div>
@@ -37,7 +43,7 @@ function Card(props) {
           </button>
         </a>
       </div>
-    </div>
+    </ScrollAnimation>
   );
 }
 

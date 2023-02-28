@@ -78,7 +78,7 @@
       "id": 7,
       "title": "Options Education",
       "details": "I built  landing page for an educational agency that processes application to study abroad, I had fun learning firebase to handle the form.",
-      "link": "https://www.optionsedu.org/",
+      "link": "https://options-education.vercel.app/",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1636322382/portfolio/www.optionsedu.org__macbook_h3tjqm.png",
       "stack": [
         {"classname": "fab fa-html5", "id": 711},
@@ -90,7 +90,7 @@
       "id": 8,
       "title": "Surpaxx Technology",
       "details": "I built  an info website for a technology consultancy agency.",
-      "link": "https://surpaxxtech.com/",
+      "link": "https://surpaxxtech.vercel.app/",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1640548455/Frame_18_k4dbfm.png",
       "stack": [
         {"classname": "fab fa-react", "id": 811},
@@ -103,7 +103,7 @@
       "title": "Auctions Village",
       "details": "Worked with a team on building an auctioning platform featuring a user section, chats section and an admin dashboard. I learnt a lot about react optimisation techniques using useCallback and useMemo hooks as well as using redux toolkit.",
       "link": "https://app.auctionsvillage.com/",
-      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1658606268/portfolio/smartmockups_l5ybbn2k_bbu6az.jpg",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1677614740/portfolio/smartmockups_leoogbnz_rkvpco.jpg",
       "stack": [
         {"classname": "fab fa-react", "id": 911},
         {"classname": "fab fa-sass", "id": 912}

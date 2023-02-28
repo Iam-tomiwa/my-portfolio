@@ -8,13 +8,13 @@ function CardWrap({data}) {
         <span className="underline">Projects</span>
       </h1>
       <div className={classes.cardsWrap}>
-        {data.map(el => (
+        {data.map((el, i) => (
           <Card
+            delay={i * 100}
             title={el.title}
             src={el.src}
             details={el.details}
             link={el.link}
-            key={el.id}
             stack={el.stack}
             otherStacks={el?.otherStacks}
           >

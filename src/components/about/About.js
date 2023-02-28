@@ -1,15 +1,21 @@
+import ScrollAnimation from "react-animate-on-scroll";
 import aboutImg from "../../assets/images/yo.jpg";
 import "./about.css";
 
 function About() {
   return (
     <section id="about" className="about section">
-      <div>
+      <ScrollAnimation animateOnce={true} animateIn="fadeInUp">
         <div className="aboutImg">
           <img src={aboutImg} alt="about me" />
         </div>
-      </div>
-      <div className="left-wrap">
+      </ScrollAnimation>
+      <ScrollAnimation
+        animateOnce={true}
+        animateIn="fadeInUp"
+        delay={100}
+        className="left-wrap"
+      >
         <h2>
           <span className="underline">About Me</span>
         </h2>
@@ -44,14 +50,13 @@ function About() {
           <li>GRAPH QL</li>
         </ul>
         <a
-          href="https://drive.google.com/file/d/1ScpZxluVKrVWpbZhZJ4TjTqbuV7zuzne/view?usp=sharing"
-          download
+          href="https://docs.google.com/document/d/1dtb7AJfWbIcJOrzvQ2LCRHPSELty0c9QPFd9Ck-vMM8/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="btn"> Download Resume</button>
+          <button className="btn"> View Resume</button>
         </a>
-      </div>
+      </ScrollAnimation>
     </section>
   );
 }

@@ -54,10 +54,18 @@ header p {
     /* line-height: 3rem; */
   }
 }
+.icons-wrap {
+  margin-top: 0.4rem;
+}
 .icons-wrap a {
   margin: 0 0.5rem !important;
 }
+.icons-wrap a:hover i {
+  transform: translateY(-0.4rem);
+}
+
 .icons-wrap i {
+  transition: all 0.4s;
   font-size: 1.5rem;
   padding: 0.5rem;
   border-radius: 50px;

@@ -103,7 +103,7 @@ section {
 .btn {
   background: var(--sec-color);
   color: var(--primary-color);
-  padding: 0.5rem 2.5rem;
+  padding: 0.8rem 2.5rem;
   border-radius: 60px;
   text-decoration: none;
   transition: 0.3s;
