@@ -82,4 +82,7 @@
   .left-wrap * {
     margin: 1.2rem auto;
   }
+  .left-wrap ul {
+    grid-template-columns: 1fr 1fr;
+  }
 }
