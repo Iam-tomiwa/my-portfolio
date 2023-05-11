@@ -117,7 +117,12 @@
       "link": "https://raji-eta.vercel.app/",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1658609612/portfolio/smartmockups_l5ydbxxa_nxwqml.jpg",
       "stack": [{"classname": "fab fa-sass", "id": 1012}],
-      "otherStacks": ["/next-icon.png", "tailwind-css-icon.png", "/ts-icon.png"]
+      "otherStacks": [
+        "/next-icon.png",
+        "tailwind-css-icon.png",
+        "/ts-icon.png"
+      ],
+      "githubLink": "https://github.com/Iam-tomiwa/raji"
     }
   ]
 }
