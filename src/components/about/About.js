@@ -1,5 +1,5 @@
 import ScrollAnimation from "react-animate-on-scroll";
-import aboutImg from "../../assets/images/yo.jpg";
+import aboutImg from "../../assets/images/about.jpeg";
 import "./about.css";
 
 function About() {
@@ -30,10 +30,10 @@ function About() {
           I watch movies ( sci-fi and adventures ), listen to songs or read
           articles on interesting topics.
         </p>
-        <p>
+        {/* <p>
           I'm also a first class student of Microbiology at the University of
           Lagos.
-        </p>
+        </p> */}
         <h3>Skills:</h3>
         <ul>
           <li>HTML</li>
