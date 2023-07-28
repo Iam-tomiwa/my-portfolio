@@ -87,18 +87,6 @@
       ]
     },
     {
-      "id": 8,
-      "title": "Surpaxx Technology",
-      "details": "I built  an info website for a technology consultancy agency.",
-      "link": "https://surpaxxtech.vercel.app/",
-      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1640548455/Frame_18_k4dbfm.png",
-      "stack": [
-        {"classname": "fab fa-react", "id": 811},
-        {"classname": "fab fa-sass", "id": 812},
-        {"classname": "fab fa-js", "id": 813}
-      ]
-    },
-    {
       "id": 9,
       "title": "Auctions Village",
       "details": "Worked with a team on building an auctioning platform featuring a user section, chats section and an admin dashboard. I learnt a lot about react optimisation techniques using useCallback and useMemo hooks as well as using redux toolkit.",
@@ -123,6 +111,19 @@
         "/ts-icon.png"
       ],
       "githubLink": "https://github.com/Iam-tomiwa/raji"
+    },
+    {
+      "id": 10,
+      "title": "QuizQuest",
+      "details": "Test Your Knowledge with Fun Trivia! 🚀. I took on a challenge and built QuizQuest in just 7 hours! 🏆 It's a web app where you can test your knowledge with quizzes on various topics. 🧠 Get ready for an interactive and engaging experience, answering multiple-choice questions and getting instant feedback on your answers. Let the fun begin! 🎉",
+      "link": "https://quizquest.vercel.app/",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1687247155/portfolio/127.0.0.1_5173_quiz_category_17_number_3_difficulty_easy_2_jtnrh3.png",
+      "stack": [
+        {"classname": "fab fa-sass", "id": 1012},
+        {"classname": "fab fa-react", "id": 1013}
+      ],
+      "otherStacks": ["tailwind-css-icon.png", "/ts-icon.png"],
+      "githubLink": "https://github.com/Iam-tomiwa/QuizQuest"
     }
   ]
 }
