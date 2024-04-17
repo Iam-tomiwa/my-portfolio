@@ -50,7 +50,7 @@ function About() {
           <li>GRAPH QL</li>
         </ul>
         <a
-          href="https://docs.google.com/document/d/1dtb7AJfWbIcJOrzvQ2LCRHPSELty0c9QPFd9Ck-vMM8/"
+          href={window.location.origin + "/resume.pdf"}
           target="_blank"
           rel="noopener noreferrer"
         >
