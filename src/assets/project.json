@@ -88,10 +88,10 @@
     },
     {
       "id": 9,
-      "title": "Auctions Village",
-      "details": "Worked with a team on building an auctioning platform featuring a user section, chats section and an admin dashboard. I learnt a lot about react optimisation techniques using useCallback and useMemo hooks as well as using redux toolkit.",
-      "link": "https://app.auctionsvillage.com/",
-      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1677614740/portfolio/smartmockups_leoogbnz_rkvpco.jpg",
+      "title": "Visaintel",
+      "details": "Led the frontend development of a travel marketplace website, featuring chats, an escrow payments system, and a user and admin dashboard using technologies such as React, Redux, and Material UI, to build scalable and modular UI components.",
+      "link": "https://app.visaintel.com/",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1713390352/portfolio/smartmockups_lv4c1rgz_eveeq1.jpg",
       "stack": [
         {"classname": "fab fa-react", "id": 911},
         {"classname": "fab fa-sass", "id": 912}
