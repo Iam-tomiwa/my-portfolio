@@ -10,7 +10,8 @@
       "stack": [
         {"classname": "fab fa-html5", "id": 211},
         {"classname": "fab fa-sass", "id": 212}
-      ]
+      ],
+      "status": "ARCHIVED"
     },
     {
       "id": 3,
@@ -113,17 +114,29 @@
       "githubLink": "https://github.com/Iam-tomiwa/raji"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "QuizQuest",
       "details": "Test Your Knowledge with Fun Trivia! 🚀. I took on a challenge and built QuizQuest in just 7 hours! 🏆 It's a web app where you can test your knowledge with quizzes on various topics. 🧠 Get ready for an interactive and engaging experience, answering multiple-choice questions and getting instant feedback on your answers. Let the fun begin! 🎉",
       "link": "https://quizquest.vercel.app/",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1687247155/portfolio/127.0.0.1_5173_quiz_category_17_number_3_difficulty_easy_2_jtnrh3.png",
       "stack": [
-        {"classname": "fab fa-sass", "id": 1012},
-        {"classname": "fab fa-react", "id": 1013}
+        {"classname": "fab fa-sass", "id": 1112},
+        {"classname": "fab fa-react", "id": 1113}
       ],
       "otherStacks": ["tailwind-css-icon.png", "/ts-icon.png"],
       "githubLink": "https://github.com/Iam-tomiwa/QuizQuest"
+    },
+    {
+      "id": 12,
+      "title": "Maven.fund",
+      "details": "Maven is an exclusive cryptocurrency fund designed to consistently outperform the market using proprietary trading strategies and algorithms. I built the dashboard and landing page all in vanilla for optimised SSR using sass to create a mini-css utility-based libary. It was a fun project especially working on the svg animations with anime.js",
+      "link": "https://maven.fund",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/e_improve,e_sharpen/v1733312537/portfolio/mob5onejzmfncuijzmzw.jpg",
+      "stack": [
+        {"classname": "fab fa-html5", "id": 1212},
+        {"classname": "fab fa-sass", "id": 1211},
+        {"classname": "fab fa-js", "id": 1213}
+      ]
     }
   ]
 }

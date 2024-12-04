@@ -1,65 +1,42 @@
 body {
-  margin: 0;
-  font-family: "Plus Jakarta Sans";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
-  overflow-x: hidden;
+	margin: 0;
+	font-family: "Plus Jakarta Sans";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 100vw;
+	overflow-x: hidden;
 }
 textarea::placeholder,
 input::placeholder {
-  font-family: "Plus Jakarta Sans";
-}
-body::after,
-body::before {
-  content: "";
-  width: 500px;
-  height: 500px;
-  border: 1px solid var(--text-color);
-  border-radius: 50%;
-  position: fixed;
-  z-index: 170;
-  bottom: -50%;
-  right: -30%;
-}
-body::after {
-  top: -50%;
-  right: 92%;
-}
-@media (max-width: 800px) {
-  body::after,
-  body::before {
-    display: none;
-  }
+	font-family: "Plus Jakarta Sans";
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 p {
-  line-height: 2rem !important;
+	line-height: 2rem !important;
 }
 .fa-html5 {
-  color: #fa0606;
+	color: #fa0606;
 }
 .fa-css3 {
-  color: #008cff;
+	color: #008cff;
 }
 .fa-js {
-  color: #ffe602;
+	color: #ffe602;
 }
 .fa-sass {
-  color: rgb(173, 3, 32);
+	color: rgb(173, 3, 32);
 }
 .fa-react {
-  color: #61DBFB;
+	color: #61dbfb;
 }
 p {
-  line-height: 1.6;
+	line-height: 1.6;
 }

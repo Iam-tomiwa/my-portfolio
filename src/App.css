@@ -1,37 +1,37 @@
 *,
 ::placeholder {
-  padding: 0;
-  margin: 0;
-  color: var(--text-color);
-  box-sizing: border-box;
-  font-family: "PlusJakarta Regular", sans-serif;
+	padding: 0;
+	margin: 0;
+	color: var(--text-color);
+	box-sizing: border-box;
+	font-family: "PlusJakarta Regular", sans-serif;
 }
 :root {
-  --sec-color: #fff;
-  /* --hover: rgb(71, 68, 68); */
-  --focus-shadow: 0 0 0 3px rgba(207, 233, 235, 0.856);
-  --text-color: #e7e7e7;
-  --after-color: #cfe9eb;
-  --primary-color: #0b0c0e;
-  --input-border: #e6e6e6;
-  scroll-behavior: smooth;
-  --card-color: rgb(18, 19, 20);
-  --box-shadow: #0e0e0e;
-  /* scroll-padding-top: 0px; */
+	--sec-color: #fff;
+	/* --hover: rgb(71, 68, 68); */
+	--focus-shadow: 0 0 0 3px rgba(207, 233, 235, 0.856);
+	--text-color: #e7e7e7;
+	--after-color: #cfe9eb;
+	--primary-color: #0b0c0e;
+	--input-border: #e6e6e6;
+	scroll-behavior: smooth;
+	--card-color: rgb(18, 19, 20);
+	--box-shadow: #0e0e0e;
+	/* scroll-padding-top: 0px; */
 }
 @font-face {
-  font-family: "PlusJakarta";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 600;
-  src: url("./assets/font/PlusJakartaDisplay-Bold.otf");
+	font-family: "PlusJakarta";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 600;
+	src: url("./assets/font/PlusJakartaDisplay-Bold.otf");
 }
 @font-face {
-  font-family: "PlusJakarta Regular";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url("./assets/font/PlusJakartaDisplay-Regular.otf");
+	font-family: "PlusJakarta Regular";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url("./assets/font/PlusJakartaDisplay-Regular.otf");
 }
 h1,
 h2,
@@ -39,105 +39,114 @@ h3,
 h4,
 h5,
 .btn {
-  font-family: "PlusJakarta", sans-serif;
+	font-family: "PlusJakarta", sans-serif;
 }
-.App {
-  background: var(--primary-color);
+body {
+	background: var(--primary-color);
+	background-image: linear-gradient(
+			90deg,
+			rgba(255, 255, 255, 0.05) 1px,
+			transparent 0
+		),
+		linear-gradient(180deg, rgba(255, 255, 255, 0.05) 1px, transparent 0);
+	background-position: center 15px;
+	background-size: 32px 32px;
+	border: 3px solid var(--after-color);
+	min-height: 100dvh;
 }
 p,
 span {
-  font-weight: 300;
+	font-weight: 300;
 }
 section h1 span,
 section h2 span {
-  font-weight: 500;
+	font-weight: 500;
 }
 .underline {
-  position: relative;
+	position: relative;
 }
 .underline::after {
-  content: "";
-  width: 120%;
-  height: 70px;
-  border-radius: 50%/20px 30px 0 0;
-  position: absolute;
-  top: 86%;
-  left: -1rem;
-  border: 5px solid var(--after-color);
-  border-color: var(--after-color) transparent transparent transparent;
+	content: "";
+	width: 120%;
+	height: 70px;
+	border-radius: 50%/20px 30px 0 0;
+	position: absolute;
+	top: 86%;
+	left: -1rem;
+	border: 5px solid var(--after-color);
+	border-color: var(--after-color) transparent transparent transparent;
 }
 .fullHeight {
-  min-height: 95vh;
-  margin-top: 1rem;
+	min-height: 95vh;
+	margin-top: 1rem;
 }
 .app-wrap .inner {
-  padding: 0 1rem 0 1rem;
+	padding: 0 1rem 0 1rem;
+	max-width: 1200px;
+	margin: auto;
 }
 section {
-  padding-top: 90px;
-  /* scroll-padding-top: 70px; */
-  scroll-snap-type: both mandatory;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+	padding-top: 90px;
+	/* scroll-padding-top: 70px; */
+	scroll-snap-type: both mandatory;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 .app-wrap {
-  background: var(--primary-color);
-  margin: auto;
-  width: 100vw;
-  scroll-padding-top: 60px;
-  max-width: 1000px;
-  position: relative;
-  z-index: 100;
-  transition: 0.4s transform;
-  animation-play-state: paused;
-  animation-delay: 2s !important;
-  transform: translate(0, 0%) scale(1);
-  top: 0;
-  transition: transform 0.4s !important;
-  height: max-content;
+	width: 100vw;
+	scroll-padding-top: 60px;
+	position: relative;
+	z-index: 100;
+	transition: 0.4s transform;
+	animation-play-state: paused;
+	animation-delay: 2s !important;
+	transform: translate(0, 0%) scale(1);
+	top: 0;
+	transition: transform 0.4s !important;
+	height: max-content;
 }
 
 .fa-external-link-alt {
-  color: var(--primary-color);
+	color: var(--primary-color);
 }
 .btn {
-  background: var(--sec-color);
-  color: var(--primary-color);
-  padding: 0.8rem 2.5rem;
-  border-radius: 60px;
-  text-decoration: none;
-  transition: 0.3s;
-  border: none;
-  font-size: 0.9rem;
-  display: flex;
-  place-items: center;
-  place-content: center;
-  outline: none;
-  cursor: pointer;
+	background: var(--sec-color);
+	color: var(--primary-color);
+	padding: 0.8rem 2.5rem;
+	border-radius: 60px;
+	text-decoration: none;
+	transition: 0.3s;
+	border: none;
+	font-size: 0.9rem;
+	display: flex;
+	place-items: center;
+	place-content: center;
+	outline: none;
+	cursor: pointer;
 }
 .btn i {
-  color: var(--primary-color);
+	color: var(--primary-color);
 }
 
 .btn a {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 .btn-tp {
-  background: transparent;
-  border: 1px solid var(--sec-color);
+	background: transparent;
+	border: 1px solid var(--sec-color);
 }
 .btn:hover {
-  color: var(--sec-color);
-  background: transparent;
-  border: 1px solid var(--sec-color);
+	color: var(--sec-color);
+	background: transparent;
+	border: 1px solid var(--sec-color);
 }
 .btn:hover i {
-  color: var(--sec-color);
+	color: var(--sec-color);
 }
 .btn:disabled {
-  background-color: #96b7db;
-  cursor: wait;
+	background-color: #96b7db;
+	cursor: wait;
 }
 
 button:focus,
@@ -145,99 +154,96 @@ button:focus,
 select:focus,
 textarea:focus,
 input:not([type="radio"]):focus {
-  border-color: var(--focus-shadow);
-  outline: none;
+	border-color: var(--focus-shadow);
+	outline: none;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  /* flex-wrap: wrap; */
-  padding: 1rem 0.5rem;
-  margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/* flex-wrap: wrap; */
+	padding: 1rem 0.5rem;
+	margin-top: 2rem;
 }
 
 footer p {
-  margin: 0.3rem;
+	margin: 0.3rem;
 }
 
 footer .heart {
-  color: #f11515;
-  /* padding: 0.6rem 0.6rem 0 0.6rem; */
-  font-size: 1rem;
-  animation: scaling 0.6s linear infinite;
-  margin: 0 0.5rem;
+	color: #f11515;
+	/* padding: 0.6rem 0.6rem 0 0.6rem; */
+	font-size: 1rem;
+	animation: scaling 0.6s linear infinite;
+	margin: 0 0.5rem;
 }
 @keyframes scaling {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.3);
-  }
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.3);
+	}
 }
 @media (max-width: 760px) {
-  .btn {
-    width: 80%;
-    margin: 2rem auto;
-  }
-  header h1 {
-    line-height: 3.5rem;
-  }
-  footer {
-    flex-direction: column;
-  }
+	.btn {
+		width: 80%;
+		margin: 2rem auto;
+	}
+	header h1 {
+		line-height: 3.5rem;
+	}
+	footer {
+		flex-direction: column;
+	}
 }
 @media (min-width: 1600px) {
-  html {
-    font-size: 19px;
-  }
-  .app-wrap {
-    max-width: 1300px;
-  }
+	html {
+		font-size: 19px;
+	}
 }
 
 /* displayMsg styles */
 .msg {
-  position: fixed;
-  background-color: rgb(4, 182, 4);
-  border-radius: 5px;
-  color: white;
-  margin: 0.5rem auto;
-  transform: translateX(150vw);
-  padding: 0.5rem 4rem 0.5rem 2rem;
-  width: auto;
-  display: block;
-  top: 0.5rem;
-  right: 2rem;
-  z-index: 150;
-  -webkit-animation: msg 0.5s ease forwards;
-  animation: msg 0.5s ease forwards;
+	position: fixed;
+	background-color: rgb(4, 182, 4);
+	border-radius: 5px;
+	color: white;
+	margin: 0.5rem auto;
+	transform: translateX(150vw);
+	padding: 0.5rem 4rem 0.5rem 2rem;
+	width: auto;
+	display: block;
+	top: 0.5rem;
+	right: 2rem;
+	z-index: 150;
+	-webkit-animation: msg 0.5s ease forwards;
+	animation: msg 0.5s ease forwards;
 }
 
 @keyframes msg {
-  to {
-    transform: translateX(0);
-  }
+	to {
+		transform: translateX(0);
+	}
 }
 @media (max-width: 500px) {
-  .msg {
-    position: fixed;
-    width: 95%;
-    margin: auto;
-    left: 0;
-    right: 0;
-    padding: 0.5rem 1.5rem;
-    transform: translate(0);
-    -webkit-clip-path: inset(0 0 100% 0);
-    clip-path: inset(0 0 100% 0);
-    animation: sm-msg 0.5s ease forwards;
-  }
-  @keyframes sm-msg {
-    to {
-      clip-path: inset(0 0 0 0);
-    }
-  }
+	.msg {
+		position: fixed;
+		width: 95%;
+		margin: auto;
+		left: 0;
+		right: 0;
+		padding: 0.5rem 1.5rem;
+		transform: translate(0);
+		-webkit-clip-path: inset(0 0 100% 0);
+		clip-path: inset(0 0 100% 0);
+		animation: sm-msg 0.5s ease forwards;
+	}
+	@keyframes sm-msg {
+		to {
+			clip-path: inset(0 0 0 0);
+		}
+	}
 }
