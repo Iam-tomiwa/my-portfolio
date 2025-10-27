@@ -8,8 +8,14 @@
       "githubLink": "https://github.com/Iam-tomiwa/chat-app-ui",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747788/portfolio/chat-app_lxsyi8.jpg",
       "stack": [
-        {"classname": "fab fa-html5", "id": 211},
-        {"classname": "fab fa-sass", "id": 212}
+        {
+          "classname": "fab fa-html5",
+          "id": 211
+        },
+        {
+          "classname": "fab fa-sass",
+          "id": 212
+        }
       ],
       "status": "ARCHIVED"
     },
@@ -21,9 +27,18 @@
       "githubLink": "https://github.com/Iam-tomiwa/Gp-Calc",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633517687/portfolio/gpcalc_h7ztya.png",
       "stack": [
-        {"classname": "fab fa-html5", "id": 311},
-        {"classname": "fab fa-css3", "id": 312},
-        {"classname": "fab fa-js", "id": 313}
+        {
+          "classname": "fab fa-html5",
+          "id": 311
+        },
+        {
+          "classname": "fab fa-css3",
+          "id": 312
+        },
+        {
+          "classname": "fab fa-js",
+          "id": 313
+        }
       ]
     },
     {
@@ -34,9 +49,18 @@
       "githubLink": "https://github.com/Iam-tomiwa/Netfinder",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633517689/portfolio/netfinder_qgavlg.png",
       "stack": [
-        {"classname": "fab fa-html5", "id": 411},
-        {"classname": "fab fa-css3", "id": 412},
-        {"classname": "fab fa-js", "id": 413}
+        {
+          "classname": "fab fa-html5",
+          "id": 411
+        },
+        {
+          "classname": "fab fa-css3",
+          "id": 412
+        },
+        {
+          "classname": "fab fa-js",
+          "id": 413
+        }
       ]
     },
     {
@@ -47,8 +71,14 @@
       "githubLink": "https://github.com/Iam-tomiwa/rock-paper-scissors",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1619747639/portfolio/roshambo_ma5mbi.jpg",
       "stack": [
-        {"classname": "fab fa-html5", "id": 111},
-        {"classname": "fab fa-js", "id": 112}
+        {
+          "classname": "fab fa-html5",
+          "id": 111
+        },
+        {
+          "classname": "fab fa-js",
+          "id": 112
+        }
       ]
     },
     {
@@ -59,8 +89,14 @@
       "githubLink": "https://github.com/Iam-tomiwa/react-todo-app",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1620473426/desktop-preview_emxsgo.jpg",
       "stack": [
-        {"classname": "fab fa-react", "id": 511},
-        {"classname": "fab fa-css3", "id": 512}
+        {
+          "classname": "fab fa-react",
+          "id": 511
+        },
+        {
+          "classname": "fab fa-css3",
+          "id": 512
+        }
       ]
     },
     {
@@ -71,8 +107,14 @@
       "githubLink": "https://github.com/Iam-tomiwa/react-todo-app",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1633524509/portfolio/portfolio_d8xa9j.png",
       "stack": [
-        {"classname": "fab fa-react", "id": 611},
-        {"classname": "fab fa-css3", "id": 612}
+        {
+          "classname": "fab fa-react",
+          "id": 611
+        },
+        {
+          "classname": "fab fa-css3",
+          "id": 612
+        }
       ]
     },
     {
@@ -82,9 +124,18 @@
       "link": "https://options-education.vercel.app/",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1636322382/portfolio/www.optionsedu.org__macbook_h3tjqm.png",
       "stack": [
-        {"classname": "fab fa-html5", "id": 711},
-        {"classname": "fab fa-sass", "id": 712},
-        {"classname": "fab fa-js", "id": 713}
+        {
+          "classname": "fab fa-html5",
+          "id": 711
+        },
+        {
+          "classname": "fab fa-sass",
+          "id": 712
+        },
+        {
+          "classname": "fab fa-js",
+          "id": 713
+        }
       ]
     },
     {
@@ -94,10 +145,19 @@
       "link": "https://app.visaintel.com/",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1713390352/portfolio/smartmockups_lv4c1rgz_eveeq1.jpg",
       "stack": [
-        {"classname": "fab fa-react", "id": 911},
-        {"classname": "fab fa-sass", "id": 912}
+        {
+          "classname": "fab fa-react",
+          "id": 911
+        },
+        {
+          "classname": "fab fa-sass",
+          "id": 912
+        }
       ],
-      "otherStacks": ["/mui-icon.png", "/redux-icon.svg"]
+      "otherStacks": [
+        "/mui-icon.png",
+        "/redux-icon.svg"
+      ]
     },
     {
       "id": 10,
@@ -105,7 +165,12 @@
       "details": "I was learning the next.js framework and typescript, then I decided to practice and play around by building a portfolio website for a friend. I especially had fun combining design ideas from various websites online and animating the elements.",
       "link": "https://raji-eta.vercel.app/",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1658609612/portfolio/smartmockups_l5ydbxxa_nxwqml.jpg",
-      "stack": [{"classname": "fab fa-sass", "id": 1012}],
+      "stack": [
+        {
+          "classname": "fab fa-sass",
+          "id": 1012
+        }
+      ],
       "otherStacks": [
         "/next-icon.png",
         "tailwind-css-icon.png",
@@ -120,10 +185,19 @@
       "link": "https://quizquest.vercel.app/",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1687247155/portfolio/127.0.0.1_5173_quiz_category_17_number_3_difficulty_easy_2_jtnrh3.png",
       "stack": [
-        {"classname": "fab fa-sass", "id": 1112},
-        {"classname": "fab fa-react", "id": 1113}
+        {
+          "classname": "fab fa-sass",
+          "id": 1112
+        },
+        {
+          "classname": "fab fa-react",
+          "id": 1113
+        }
       ],
-      "otherStacks": ["tailwind-css-icon.png", "/ts-icon.png"],
+      "otherStacks": [
+        "tailwind-css-icon.png",
+        "/ts-icon.png"
+      ],
       "githubLink": "https://github.com/Iam-tomiwa/QuizQuest"
     },
     {
@@ -133,9 +207,42 @@
       "link": "https://maven.fund",
       "src": "https://res.cloudinary.com/tomiwadev/image/upload/e_improve,e_sharpen/v1733312537/portfolio/mob5onejzmfncuijzmzw.jpg",
       "stack": [
-        {"classname": "fab fa-html5", "id": 1212},
-        {"classname": "fab fa-sass", "id": 1211},
-        {"classname": "fab fa-js", "id": 1213}
+        {
+          "classname": "fab fa-html5",
+          "id": 1212
+        },
+        {
+          "classname": "fab fa-sass",
+          "id": 1211
+        },
+        {
+          "classname": "fab fa-js",
+          "id": 1213
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Alger Investment",
+      "details": "Probably the fastest page I've built, the owner came with just a text description of what they do and a logo, no UI design, and I came up with the webpage in 3-4 hours",
+      "link": "https://www.503algerinvestmentgroupllc.com",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1761576324/portfolio/Untitled_design_1_csi1fu.png",
+      "otherStacks": [
+        "/next-icon.png",
+        "tailwind-css-icon.png",
+        "/ts-icon.png"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "TimtechVille",
+      "details": "A portfolio showcase for a leading architect and interior designer built with Nextjs and GSAP",
+      "link": "https://timtechville.com",
+      "src": "https://res.cloudinary.com/tomiwadev/image/upload/v1761576339/portfolio/Untitled_design_uyo9vx.png",
+      "otherStacks": [
+        "/next-icon.png",
+        "tailwind-css-icon.png",
+        "/ts-icon.png"
       ]
     }
   ]
