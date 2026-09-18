@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import Community from "@/components/Community";
@@ -10,13 +11,15 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description },
-  twitter: { title, description },
+  alternates: { canonical: "/community" },
+  openGraph: { title, description, url: "/community", type: "profile" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function CommunityPage() {
   return (
     <>
+      <BreadcrumbSchema name="Community" path="/community" />
       <section
         className="route-hero container"
         aria-labelledby="community-page-title"

@@ -3,26 +3,34 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight, ArrowRight } from "lucide-react";
 import Publications from "@/components/Publications";
+import {
+  BreadcrumbSchema,
+  PublicationsSchema,
+} from "@/components/StructuredData";
 import { personalInfo, publications } from "@/data/portfolio";
 
 const title = "Microbiology & Bioinformatics Research — Tomiwa Ajayi";
 const description =
-  "Ajayi Emmanuel Tomiwa's academic portfolio: first-class Microbiology graduate, bioinformatics research, genome annotation, publications, and teaching at UNILAG.";
+  "Ajayi Emmanuel Tomiwa's academic portfolio: first-class Microbiology graduate, bioinformatics research, genome annotation, publications, and graduate assistant at UNILAG.";
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description },
-  twitter: { title, description },
+  alternates: { canonical: "/research" },
+  openGraph: { title, description, url: "/research", type: "profile" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 /** The paper whose first page is used as the hero image. */
 const featuredPaper =
-  publications.find((paper) => paper.link.includes("micropub.biology.001971")) ??
-  publications[0];
+  publications.find((paper) =>
+    paper.link.includes("micropub.biology.001971"),
+  ) ?? publications[0];
 
 export default function ResearchPage() {
   return (
     <>
+      <PublicationsSchema />
+      <BreadcrumbSchema name="Research" path="/research" />
       <section
         className="research-hero container"
         aria-labelledby="academic-title"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 import Link from "next/link";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 import Projects from "@/components/Projects";
@@ -12,13 +13,15 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  openGraph: { title, description },
-  twitter: { title, description },
+  alternates: { canonical: "/engineering" },
+  openGraph: { title, description, url: "/engineering", type: "profile" },
+  twitter: { card: "summary_large_image", title, description },
 };
 
 export default function EngineeringPage() {
   return (
     <>
+      <BreadcrumbSchema name="Engineering" path="/engineering" />
       <section
         className="route-hero container"
         aria-labelledby="engineering-title"
