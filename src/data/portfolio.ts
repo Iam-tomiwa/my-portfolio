@@ -6,7 +6,10 @@ export interface PersonalInfo {
   phone: string;
   github: string;
   linkedin: string;
+  /** Engineering résumé. */
   resumeUrl: string;
+  /** Academic CV — publications, research and teaching. */
+  academicCvUrl: string;
   bio: string;
 }
 
@@ -49,7 +52,8 @@ export interface Project {
   type: string;
   url?: string;
   github?: string;
-  highlights: string[];
+  /** What I did and what it was worth — rendered under "My contribution". */
+  contribution: string;
   tech: string[];
   /** Screenshot/preview image URL. When omitted, a monogram placeholder is rendered. */
   image?: string;
@@ -63,7 +67,10 @@ export const personalInfo: PersonalInfo = {
   phone: "+234 815 405 0552",
   github: "https://github.com/Iam-tomiwa",
   linkedin: "https://www.linkedin.com/in/ajayi-tomiwa/",
-  resumeUrl: "https://docs.google.com/document/d/1dtb7AJfWbIcJOrzvQ2LCRHPSELty0c9QPFd9Ck-vMM8/edit?tab=t.0#heading=h.ltwgrasdmgm5",
+  resumeUrl:
+    "https://docs.google.com/document/d/1dtb7AJfWbIcJOrzvQ2LCRHPSELty0c9QPFd9Ck-vMM8/edit?tab=t.0#heading=h.ltwgrasdmgm5",
+  academicCvUrl:
+    "https://docs.google.com/document/d/1qtV02ZJ0Yk6WeKpXPFVLrQT2lCmR7WG6MUcz8qVAhPk/edit?tab=t.0",
   bio: "Senior Front-End Engineer with 6+ years of experience specializing in building, scaling, and optimizing high-performance applications across Fintech, SaaS dashboards, and E-commerce. A first-class Microbiology graduate and bioinformatics researcher, applying systems thinking to frontend architecture and genomic data analysis.",
 };
 
@@ -72,7 +79,12 @@ export const education: Education = {
   degree: "B.Sc. (Hons) in Microbiology (First Class Honours)",
   cgpa: "4.74 / 5.00 (94.8%)",
   date: "November 2018 - August 2024",
-  coursework: ["Bioinformatics", "Biostatistics", "Environmental Microbiology", "Microbial Genetics"],
+  coursework: [
+    "Bioinformatics",
+    "Biostatistics",
+    "Environmental Microbiology",
+    "Microbial Genetics",
+  ],
   highlights: [
     "Balanced rigorous academic work with professional software development experience.",
     "Applied analytical and systems thinking skills to software engineering and frontend architecture.",
@@ -81,31 +93,62 @@ export const education: Education = {
 
 export const publications: Publication[] = [
   {
-    title: "Genome Sequences of Streptomyces Cluster BE2 phages CeilingFan and Mugiwara",
-    authors: "Nsa, I. Y., Ejiofor, E., Ajayi, E., Okoli, I., Uchegbu, C., Aworetan, O., Jebe-Abdullahi, F., Kamselem, H., Abidoye, S., Oleka, E., Okupa, O., Lawal, F., Immanuel, G., Tomi, E., Faith, O., Akpederi, G., Adisa, F., Modesola, O., Burodo, C., Madu, J., & Ilori, M.",
+    title:
+      "A Review of Hibiscus cannabinus L. (Kenaf) Fibre as a Sustainable Alternative to Enhance Regulatory Efforts against Expanded Polystyrene Foam and Single-Use Plastics in Nigeria",
+    authors:
+      "Nsa, I. Y., Kareem, K. T., Ajayi, E. T., Adesoji, A. O., & Markjohnathan, C. I.",
+    journal: "Journal of Applied Sciences and Environmental Management",
+    date: "2026",
+    link: "https://dx.doi.org/10.4314/jasem.v30i8.14",
+    highlight:
+      "Reviewed kenaf fibre as a biodegradable substitute for expanded polystyrene and single-use plastics, and what adopting it would ask of Nigerian regulation.",
+  },
+  {
+    title:
+      "Genome Sequences of Streptomyces Cluster BE2 phages CeilingFan and Mugiwara",
+    authors:
+      "Nsa, I. Y., Ejiofor, E., Ajayi, E., Okoli, I., Uchegbu, C., Aworetan, O., Jebe-Abdullahi, F., Kamselem, H., Abidoye, S., Oleka, E., Okupa, O., Lawal, F., Immanuel, G., Tomi, E., Faith, O., Akpederi, G., Adisa, F., Modesola, O., Burodo, C., Madu, J., & Ilori, M.",
     journal: "microPublication Biology",
     date: "2026",
     link: "https://doi.org/10.17912/micropub.biology.001971",
-    highlight: "Annotated and characterized mycobacteriophages CeilingFan and Mugiwara, identifying key genomic sequences.",
+    highlight:
+      "Annotated and characterized mycobacteriophages CeilingFan and Mugiwara, identifying key genomic sequences.",
   },
   {
-    title: "Bacterial Detection in Corrosive Media and Assessment of Corrosion Inhibition Efficiency of Novel Paints",
-    authors: "Obidi, O. F., Raheem, I. A., Tijani, A. O., Adejare-Kuti, B. M., Sumaila, O. R., Ajayi, E., ... & Yekini, A. A.",
+    title:
+      "Bacterial Detection in Corrosive Media and Assessment of Corrosion Inhibition Efficiency of Novel Paints",
+    authors:
+      "Obidi, O. F., Raheem, I. A., Tijani, A. O., Adejare-Kuti, B. M., Sumaila, O. R., Ajayi, E., ... & Yekini, A. A.",
     journal: "Journal of Engineering Research (JER)",
     date: "2025",
     link: "https://jer.unilag.edu.ng/article/view/2921/2549",
-    highlight: "Studied paint degradation, isolating microbial communities and analyzing EIS to track corrosion resistance.",
+    highlight:
+      "Studied paint degradation, isolating microbial communities and analyzing EIS to track corrosion resistance.",
   },
 ];
 
 export const skills: SkillCategory[] = [
   {
     category: "Languages",
-    items: ["TypeScript", "JavaScript (ES6+)", "Python", "HTML5", "CSS3", "Markdown"],
+    items: [
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Python",
+      "HTML5",
+      "CSS3",
+      "Markdown",
+    ],
   },
   {
     category: "Frontend & Frameworks",
-    items: ["React", "Next.js (App & Pages Router)", "React Native", "Angular", "jQuery", "Node.js"],
+    items: [
+      "React",
+      "Next.js (App & Pages Router)",
+      "React Native",
+      "Angular",
+      "jQuery",
+      "Node.js",
+    ],
   },
   {
     category: "Libraries & State",
@@ -150,17 +193,27 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Biological Techniques",
-    items: ["Polymerase Chain Reaction (PCR)", "Enzyme Immunoassay (EIA)", "Centrifugation", "Microbial Testing"],
+    items: [
+      "Polymerase Chain Reaction (PCR)",
+      "Enzyme Immunoassay (EIA)",
+      "Centrifugation",
+      "Microbial Testing",
+    ],
   },
   {
     category: "Soft & Collaborative",
-    items: ["Agile/Scrum", "Technical Mentorship", "Customer Relationship Management", "Public Speaking"],
+    items: [
+      "Agile/Scrum",
+      "Technical Mentorship",
+      "Customer Relationship Management",
+      "Public Speaking",
+    ],
   },
 ];
 
 export const devExperience: WorkExperience[] = [
   {
-    role: "Senior Frontend Developer",
+    role: "Lead Frontend Developer",
     company: "Raptures.io",
     location: "Lagos, Nigeria",
     date: "July 2025 - Present",
@@ -173,7 +226,14 @@ export const devExperience: WorkExperience[] = [
       "Drove the end-to-end development and launch of 'Typemaster,' a high-traction children's typing game for Rapkids, validated by strong positive feedback from beta testers.",
       "Championed data-driven platform optimization by collaborating with Digital Marketing and Design, leveraging Mixpanel to identify and resolve key user flow bottlenecks, resulting in a 15% increase in the overall platform conversion rate.",
     ],
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "TanStack Query", "Mixpanel"],
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack Query",
+      "Mixpanel",
+    ],
   },
   {
     role: "Senior Frontend Developer (Contract)",
@@ -215,7 +275,13 @@ export const devExperience: WorkExperience[] = [
       "Streamlined deployment and testing in collaboration with QA and DevOps, reducing downtime by 25% and improving application performance.",
       "Enhanced SEO and optimized the search feature, increasing organic traffic by 40% and improving search accuracy by 30%.",
     ],
-    tech: ["React", "Redux", "Material UI", "Payment Integration", "SEO Optimization"],
+    tech: [
+      "React",
+      "Redux",
+      "Material UI",
+      "Payment Integration",
+      "SEO Optimization",
+    ],
   },
   {
     role: "Frontend Developer (Freelance)",
@@ -230,7 +296,14 @@ export const devExperience: WorkExperience[] = [
       "Taught frontend development for beginners at the Altschool summer camp.",
       "Collaborated closely with clients, backend engineers, and product managers to define problem specifications, leading to faster project delivery by an average of 2 weeks.",
     ],
-    tech: ["React", "Zustand", "GSAP", "Framer Motion", "QR Code Scanning", "POS Architecture"],
+    tech: [
+      "React",
+      "Zustand",
+      "GSAP",
+      "Framer Motion",
+      "QR Code Scanning",
+      "POS Architecture",
+    ],
   },
   {
     role: "Frontend Developer",
@@ -260,7 +333,13 @@ export const academicExperience: WorkExperience[] = [
       "Assisted in teaching undergraduate students on genome annotation fundamentals, mastering tools including DNA Master, KBase, and GeneMark to process draft genomes during the summer.",
       "Optimizing laboratory research workflows by integrating computational skills and data collation methods for current research projects.",
     ],
-    tech: ["Bioinformatics", "Genomics", "Biopython", "KBase", "Genome Annotation"],
+    tech: [
+      "Bioinformatics",
+      "Genomics",
+      "Biopython",
+      "KBase",
+      "Genome Annotation",
+    ],
   },
   {
     role: "Undergraduate Research Assistant",
@@ -273,7 +352,12 @@ export const academicExperience: WorkExperience[] = [
       "Coordinated data collation of the annotated files across the research group.",
       "Led a team to perform gene content comparison of 3 phages in subcluster F1, writing a Python-based gene content similarity script with a poster.",
     ],
-    tech: ["Mycobacteriophages", "DNA Master", "Phamerator", "Python Scripting"],
+    tech: [
+      "Mycobacteriophages",
+      "DNA Master",
+      "Phamerator",
+      "Python Scripting",
+    ],
   },
   {
     role: "Undergraduate Thesis Researcher",
@@ -290,7 +374,8 @@ export const academicExperience: WorkExperience[] = [
   },
   {
     role: "Laboratory Assistant (Intern)",
-    company: "Center For Tuberculosis Research - Nigerian Institute of Medical Research (NIMR)",
+    company:
+      "Center For Tuberculosis Research - Nigerian Institute of Medical Research (NIMR)",
     location: "Lagos, Nigeria",
     date: "August 2023 - October 2023",
     type: "Internship",
@@ -317,119 +402,248 @@ export const academicExperience: WorkExperience[] = [
   },
 ];
 
-export const volunteerExperience: WorkExperience[] = [
+export interface CommunityEngagement {
+  role: string;
+  organisation: string;
+  location?: string;
+  /** Omitted where the date is not yet confirmed. */
+  date?: string;
+  summary: string;
+  bullets: string[];
+  /** Talks or sessions delivered as part of the engagement. */
+  talks?: string[];
+  link?: { label: string; href: string };
+  images?: { src: string; alt: string }[];
+}
+
+export const community: CommunityEngagement[] = [
   {
     role: "Programs Lead",
-    company: "The Health enLight Initiative (HLI)",
+    organisation: "The Health enLight Initiative",
     location: "Lagos, Nigeria",
     date: "August 2025 - Present",
-    type: "Volunteer",
+    summary:
+      "I run the programme calendar for a health-enlightenment NGO, and built the site it now lives on.",
     bullets: [
-      "Orchestrate monthly health webinars on Twitter Space and Google Meet, with a range of 10-80 live attendees per session.",
-      "Executed a strategic health outreach curriculum for secondary schools, trained 20 student health ambassadors, and established a sustainable framework for long-term health advocacy.",
-      "Designed several promotional flyers and drafted content for monthly programs, contributing to an increase in social media engagement and visibility.",
+      "Organise and coordinate the monthly health webinars on X Spaces and Google Meet, drawing 10-80 live attendees per session.",
+      "Design the flyers and assets, collaborating with media team, on improving social media engagement.",
+      "Ran a health outreach curriculum for secondary schools and trained 20 student health ambassadors.",
+      "Designed and built the initiative's website so the team can publish its own story.",
+    ],
+    link: {
+      label: "Visit the site",
+      href: "https://health-enlight-initiative.vercel.app/",
+    },
+    images: [
+      {
+        src: "/projects/health-enlight.webp",
+        alt: "The Health enLight Initiative website homepage, showing a stack of upcoming event cards",
+      },
+    ],
+  },
+  {
+    role: "Lead Facilitator",
+    organisation: "The Bioinformatics Bridge (BioBridge) 1.0",
+    location: "Faculty of Life Sciences, University of Lagos",
+    summary:
+      "A two-day, faculty-wide bioinformatics training. I coordinated the people and the logistics, and taught two of the sessions.",
+    bullets: [
+      "Coordinated the other facilitators and ran logistics for over 40 participants.",
+      "Designed the digital assets used across the workshop.",
+    ],
+    talks: [
+      "Creating Reproducible and Reusable Genome Analysis Workflows with KBase",
+      "Python as a Computational Skill",
+    ],
+    images: [
+      {
+        src: "/images/biobridge.webp",
+        alt: "Tomiwa presenting the KBase Narrative Navigator to participants at the BioBridge 1.0 workshop",
+      },
+      {
+        src: "/images/biobridge-2.webp",
+        alt: "Tomiwa pointing at a labelled KBase narrative dashboard during a BioBridge 1.0 session",
+      },
+    ],
+  },
+  {
+    role: "Volunteer",
+    organisation: "End TB Outreach",
+    location: "Lagos, Nigeria",
+    summary:
+      "A schools outreach for World TB Day, run with the Lagos State TB and Leprosy Control Programme.",
+    bullets: [
+      "Joined the volunteer team taking tuberculosis awareness into Lagos secondary schools.",
+      "The outreach pointed pupils and staff to free testing and treatment through the national TB hotline.",
+    ],
+    images: [
+      {
+        src: "/images/end-tb.webp",
+        alt: "Tomiwa in a World TB Day volunteer vest beside a tuberculosis symptom-awareness poster at a Lagos school",
+      },
+      {
+        src: "/images/end-tb-2.webp",
+        alt: "Volunteers and pupils holding Zero TB materials outside a Lagos school on World TB Day",
+      },
     ],
   },
   {
     role: "Student Mentor",
-    company: "National Association of Microbiology Students (NAMS) - Southwest Region",
+    organisation:
+      "National Association of Microbiology Students (NAMS), UNILAG Chapter",
     location: "Lagos, Nigeria",
     date: "July 2022 - August 2024",
-    type: "Volunteer",
+    summary:
+      "Mentoring, tutorials and talks for microbiology undergraduates at the University of Lagos.",
     bullets: [
-      "Mentored several students, with 3 achieving a first-class GPA in a semester, including one with a perfect 5.0 GPA.",
-      "Delivered a presentation on environmental sustainability, resulting in increased awareness among students about environmental issues.",
-      "Addressed 100+ first-year students during orientation, providing actionable strategies to balance academics with extracurricular activities and apply technical skills in microbiology.",
-      "Organized and conducted tutorials on coursework and statistical reporting methods, improving participants' exam performance.",
+      "Mentored several students, three of whom reached a first-class GPA in a semester - one of them a perfect 5.00.",
+      "Addressed 100+ first-year students at orientation with strategies for balancing academics with extracurriculars and putting technical skills to work in microbiology.",
+      "Organised and ran tutorials on coursework and statistical reporting methods, improving participants' exam performance.",
+      "Presented on environmental sustainability and the part microbiologists play in it.",
+    ],
+    images: [
+      {
+        src: "/images/nams-executives.webp",
+        alt: "Tomiwa with fellow NAMS executives at a University of Lagos microbiology student event",
+      },
     ],
   },
 ];
 
 export const projects: Project[] = [
   {
+    title: "MRL Nigeria",
+    description:
+      "Public site and learning platform for the Mycology Reference Laboratory Nigeria: a fungal strain catalog, publications archive, events, and a certificate-issuing course platform for healthcare professionals.",
+    type: "Platform / Learning",
+    url: "https://mycology-reference-lab-nigeria.vercel.app/",
+    contribution:
+      "I built the full platform — Next.js, Sanity and Supabase — that runs data and operations for the Mycology Reference Laboratory in Nigeria: a searchable strain catalogue clinicians order from, customisable courses that issue verifiable certificates to members, and a multi-site admin covering surveillance records, learner analytics and team management.",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Sanity",
+      "Supabase",
+      "Tailwind CSS",
+      "shadcn/ui",
+    ],
+    image: "/projects/mrl-nigeria.webp",
+  },
+  {
+    title: "The Health enLight Initiative",
+    description:
+      "Website for a Nigerian health-enlightenment NGO: programme archive, upcoming events, volunteer intake, and an editorial story told through the organisation's own photography.",
+    type: "Nonprofit / CMS Site",
+    url: "https://health-enlight-initiative.vercel.app/",
+    contribution:
+      "As programs lead, I designed and built the site for a Nigerian health NGO beautifully telling our story. It includes Programmes, events, gallery and posts which all live in Sanity for the content team to manage themselves, and a volunteer intake form that feeds straight into the team’s Brevo CRM.",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Sanity",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    image: "/projects/health-enlight.webp",
+  },
+  {
     title: "Raptures.io",
-    description: "Comic & Entertainment Platform focused on African-origin stories, featuring a full kids educational/interactive gaming suite.",
+    description:
+      "Comic & Entertainment Platform focused on African-origin stories, featuring a full kids educational/interactive gaming suite.",
     type: "Frontend / Web App",
     url: "https://raptures.io/",
-    highlights: [
-      "Led migration/refactor of legacy web-mobile codebase, cutting deploy time by 70% and achieving 95%+ Lighthouse scores.",
-      "Built 'Typemaster', a children's typing learning game with high engagement rates.",
-      "Overhauled admin backoffice portal from Bootstrap Django to React & Tailwind CSS.",
+    contribution:
+      "I led the migration and refactor of a legacy web-mobile codebase for an African comics and entertainment platform, cutting deploy time by 70% and lifting Lighthouse scores past 95. I rebuilt the admin backoffice from an ageing Bootstrap Django app into React and Tailwind, and shipped Typemaster, a children's typing game that came out of beta with strong tester feedback.",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "TanStack Query",
     ],
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Zustand", "TanStack Query"],
   },
   {
     title: "GlasstronicTech",
-    description: "Multi-portal POS system, production order orchestrator, and catalog landing page for a custom glass manufacturing enterprise.",
+    description:
+      "Multi-portal POS system, production order orchestrator, and catalog landing page for a custom glass manufacturing enterprise.",
     type: "Full-Stack System",
     url: "https://glasstronictech.org",
-    highlights: [
-      "Developed three distinct portals (Sales, Factory, Admin) for full order workflow management.",
-      "Integrated real-time QR code scanning via camera and automated PDF receipt/label generation.",
-      "Built pricing logic engine for custom glass measurements and dynamic calculations.",
+    contribution:
+      "I built the website landing page and system a custom glass manufacturer now runs on: three connected POS portals — Sales, Factory and Admin — that carry an order from quote to delivery. It prices work from custom glass measurements through a dedicated logic engine",
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "QR Scanner API",
+      "PDF Generation",
     ],
-    tech: ["React", "TypeScript", "Tailwind CSS", "Zustand", "QR Scanner API", "PDF Generation"],
   },
   {
     title: "Illumra Catalog",
-    description: "Wireless Lighting Control & IoT catalog platform integrated with a localized Sanity CMS setup and rep/store locator.",
+    description:
+      "Wireless Lighting Control & IoT catalog platform integrated with a localized Sanity CMS setup and rep/store locator.",
     type: "E-Commerce / CMS",
     url: "https://illumra.com/",
-    highlights: [
-      "Built custom local Sanity CMS integration with automated TypeGen schemas.",
-      "Designed a rep locator using LocationIQ API with radial 'Near Me' search capabilities.",
-      "Developed custom honeypot-protected Request for Quote (RFQ) forms with Brevo CRM integrations.",
+    contribution:
+      "I built the product catalogue for a US wireless-lighting and IoT manufacturer on Next.js, with a locally configured Sanity CMS and Brevo CRM integration.",
+    tech: [
+      "Next.js",
+      "React",
+      "Sanity CMS",
+      "LocationIQ API",
+      "TypeScript",
+      "Tailwind CSS",
     ],
-    tech: ["Next.js", "React", "Sanity CMS", "LocationIQ API", "TypeScript", "Tailwind CSS"],
   },
   {
     title: "TimTechVille",
-    description: "Smooth, minimal creative studio and interior design portfolio website featuring fluid page transitions and parallax scrolling.",
+    description:
+      "Smooth, minimal creative studio and interior design portfolio website featuring fluid page transitions and parallax scrolling.",
     type: "Creative Portfolio",
-    url: "https://timtechville.com/",
-    highlights: [
-      "Crafted custom parallax and scroll-driven animation modules using Framer Motion.",
-      "Optimized assets and page structure for 100% responsiveness and high performance.",
-      "Designed a minimalist, layout-first premium aesthetic.",
-    ],
+    url: "https://teamtechville.vercel.app/",
+    contribution:
+      "I designed and built the studio site for an interior design and architecture practice.  It features custom parallax and scroll-driven animation modules in Framer Motion pace the reveal of each project, over a minimal, layout-first composition that stays fully responsive without giving up performance.",
     tech: ["React", "GSAP", "Framer Motion", "CSS Modules"],
-    image: "https://res.cloudinary.com/tomiwadev/image/upload/v1761576339/portfolio/Untitled_design_uyo9vx.png",
+    image:
+      "https://res.cloudinary.com/tomiwadev/image/upload/v1761576339/portfolio/Untitled_design_uyo9vx.png",
   },
   {
     title: "Visaintel App",
-    description: "Travel agent marketplace platform featuring escrow checkout flows and real-time support chat.",
+    description:
+      "Travel agent marketplace platform featuring escrow checkout flows and real-time support chat.",
     type: "Web App with Escrow",
     url: "https://app.visaintel.com/",
-    highlights: [
-      "Built secure chat systems alongside escrow payment gateways, boosting checkouts by 50%.",
-      "Enhanced SEO performance leading to a +40% increase in organic search traffic.",
-      "Streamlined client onboarding with flexible dashboards.",
-    ],
+    contribution:
+      "I built the marketplace where travel agents and their clients transact, pairing an escrow payment flow with real-time support chat so neither side has to extend trust up front — checkouts rose 50%. I also reworked the platform’s SEO, lifting organic traffic 40%, and streamlined agent onboarding with configurable dashboards.",
     tech: ["React", "Redux", "Material UI", "WebSockets", "Stripe API"],
-    image: "https://res.cloudinary.com/tomiwadev/image/upload/v1713390352/portfolio/smartmockups_lv4c1rgz_eveeq1.jpg",
+    image:
+      "https://res.cloudinary.com/tomiwadev/image/upload/v1713390352/portfolio/smartmockups_lv4c1rgz_eveeq1.jpg",
   },
   {
     title: "Access More Campaign",
-    description: "High-performance promotional mobile app pages and loan calculation components built for Access Bank Plc.",
+    description:
+      "High-performance promotional mobile app pages and loan calculation components built for Access Bank Plc.",
     type: "Landing Page / Widget",
     url: "https://www.linkedin.com/posts/ajayi-tomiwa_accessbank-accessmore-uiux-activity-7227728148220555264-9POO",
-    highlights: [
-      "Developed high-converting promo page resulting in a 30% increase in mobile downloads.",
-      "Created highly responsive custom financial widget (loan calculator) for the homepage.",
-    ],
+    contribution:
+      "I built the promotional pages and financial widgets for Access Bank’s Access More app (among other pages for access bank), including a responsive loan calculator on the homepage that let visitors model repayments before downloading.",
     tech: ["React", "Material UI", "Redux Toolkit", "Vanilla JS"],
   },
   {
     title: "QuizQuest",
-    description: "Responsive real-time trivia quiz application built within 7 hours as a technical interview test.",
+    description:
+      "Responsive real-time trivia quiz application built within 7 hours as a technical interview test.",
     type: "Interactive Trivia",
     url: "https://quizquest.vercel.app/",
     github: "https://github.com/Iam-tomiwa/QuizQuest",
-    highlights: [
-      "Integrated Open Trivia Database API with real-time grading, timer, and score summaries.",
-      "Responsive design with smooth transition micro-animations.",
-    ],
+    contribution:
+      "I built this real-time trivia app in seven hours as a technical interview exercise: Open Trivia DB questions with live grading, a countdown timer and an end-of-round score summary, wrapped in a responsive layout with transition micro-animations.",
     tech: ["React", "Tailwind CSS", "Trivia API"],
-    image: "https://res.cloudinary.com/tomiwadev/image/upload/v1687247155/portfolio/127.0.0.1_5173_quiz_category_17_number_3_difficulty_easy_2_jtnrh3.png",
+    image:
+      "https://res.cloudinary.com/tomiwadev/image/upload/v1687247155/portfolio/127.0.0.1_5173_quiz_category_17_number_3_difficulty_easy_2_jtnrh3.png",
   },
 ];
