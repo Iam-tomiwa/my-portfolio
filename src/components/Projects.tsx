@@ -1,176 +1,197 @@
-"use client";
-
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 import { projects } from "@/data/portfolio";
-import { motion, type Variants } from "framer-motion";
+
+// Curated presentation layer over `projects` — index points at the data entry.
+const selected = [
+  {
+    index: 0,
+    category: "Medical mycology & training",
+    summary: "A reference lab, its strains, and the people it trains.",
+    image: "/projects/mrl-nigeria.webp",
+    imageAlt:
+      "MRL Nigeria homepage introducing the laboratory's fungal diagnostics and research work",
+    color: "blue",
+    outcome: "Catalog, courses and certificates in one place",
+    tags: ["Next.js", "Sanity", "Supabase"],
+  },
+  {
+    index: 2,
+    category: "Entertainment & education",
+    summary: "A new foundation for African storytelling.",
+    image: "/projects/raptures.webp",
+    imageAlt: "Raptures website showcasing African comics and stories",
+    color: "lavender",
+    outcome: "70% faster deployments",
+    tags: ["Next.js", "TypeScript", "TanStack Query"],
+  },
+  {
+    index: 1,
+    category: "Public health & community",
+    summary: "Health outreach, told through its own events.",
+    image: "/projects/health-enlight.webp",
+    imageAlt:
+      "The Health enLight Initiative homepage with a stack of upcoming event cards",
+    color: "sage",
+    outcome: "Events the team publishes themselves",
+    tags: ["Next.js", "Sanity", "Framer Motion"],
+  },
+  {
+    index: 4,
+    category: "IoT & connected products",
+    summary: "Making connected lighting easier to discover.",
+    image: "/projects/illumra-detail.webp",
+    imageAlt: "ILLUMRA wireless lighting controls product website",
+    color: "blue",
+    outcome: "CMS-driven product discovery",
+    tags: ["Next.js", "Sanity", "TypeScript"],
+  },
+  {
+    index: 3,
+    category: "Manufacturing & operations",
+    summary: "From a custom order to the factory floor.",
+    image: "/projects/glasstronictech.webp",
+    imageAlt:
+      "Glasstronic Technologies website showing engineered glass for modern construction",
+    color: "lavender",
+    outcome: "One workflow. Three connected portals.",
+    tags: ["React", "TypeScript", "Zustand"],
+  },
+  {
+    index: 5,
+    category: "Architecture & interiors",
+    summary: "A digital space with a sense of place.",
+    image: "/projects/timtechville.webp",
+    imageAlt: "TimTechVille architecture and interior design portfolio",
+    color: "sage",
+    outcome: "Designed around space and motion",
+    tags: ["React", "GSAP", "Framer Motion"],
+  },
+];
+
+// Everything not in `selected` above.
+const archive = projects.slice(selected.length);
 
 export default function Projects() {
-  const revealVariants: Variants = {
-    hidden: { opacity: 0, y: 22 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
-    },
-  };
-
-  const cardVariants: Variants = {
-    hidden: { opacity: 0, y: 28 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
-    },
-  };
-
   return (
     <section
       id="projects"
-      className="section section--alt border-b border-[#1f1f1f]"
+      className="section work-section"
+      aria-labelledby="work-title"
     >
       <div className="container">
-        {/* Section Header */}
-        <motion.p
-          className="section-label"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={revealVariants}
-        >
-          Portfolio
-        </motion.p>
-        <motion.h2
-          className="section-title"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={revealVariants}
-        >
-          Featured <em>Projects</em>
-        </motion.h2>
-        <motion.div
-          className="section-rule"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={revealVariants}
-        />
-
-        {/* Projects Grid — image-forward cards, hairline border trick */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-[1.5px] bg-[#1f1f1f] border-[1.5px] border-[#1f1f1f]"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ staggerChildren: 0.08 }}
-        >
-          {projects.map((project) => {
-            const previewHref = project.url ?? project.github;
-
+        <div className="section-heading">
+          <div>
+            <p className="section-kicker">Selected work</p>
+            <h2 id="work-title">
+              Less talk. <em>More shipped.</em>
+            </h2>
+          </div>
+          <p>
+            A few things I’ve helped bring to life.
+            <br />
+            Real products, real constraints, thoughtful solutions.
+          </p>
+        </div>
+        <div className="project-grid">
+          {selected.map((item) => {
+            const project = projects[item.index];
             return (
-              <motion.article
-                key={project.title}
-                variants={cardVariants}
-                className="group relative bg-[#050505] flex flex-col hover:bg-[#0c0c0c] transition-colors duration-300"
-              >
-                {/* Preview image / placeholder */}
+              <article className="project" key={project.title}>
                 <a
-                  href={previewHref}
+                  className={`project-visual project-visual--${item.color}`}
+                  href={project.url}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Open ${project.title}`}
-                  className="relative block aspect-16/10 overflow-hidden border-b border-[#1f1f1f]"
+                  rel="noreferrer"
+                  aria-label={`Visit ${project.title} (opens in a new tab)`}
                 >
-                  {project.image ? (
-                    <Image
-                      src={project.image}
-                      alt={`${project.title} preview`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover object-top transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 flex items-center justify-center bg-linear-to-br from-[#0c0c0c] via-[#08130f] to-[#050505]">
-                      {/* Faint grid texture */}
-                      <div
-                        className="absolute inset-0 opacity-[0.12]"
-                        style={{
-                          backgroundImage:
-                            "linear-gradient(to right, #1f1f1f 1px, transparent 1px), linear-gradient(to bottom, #1f1f1f 1px, transparent 1px)",
-                          backgroundSize: "28px 28px",
-                        }}
+                  <div className="project-browser">
+                    <div className="project-image">
+                      <Image
+                        src={item.image}
+                        alt={item.imageAlt}
+                        fill
+                        sizes="(max-width: 767px) 90vw, (max-width: 1400px) 43vw, 580px"
+                        className="project-screenshot"
                       />
-                      {/* Emerald glow */}
-                      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(16,185,129,0.10),transparent_70%)]" />
-                      <span className="relative font-display text-7xl font-light text-accent/40 select-none transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.08]">
-                        {project.title.charAt(0)}
-                      </span>
                     </div>
-                  )}
-
-                  {/* Bottom scrim for depth */}
-                  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-[#050505] to-transparent opacity-80 pointer-events-none" />
-
-                  {/* Type badge overlay */}
-                  <span className="absolute top-3 left-3 font-mono text-[0.58rem] tracking-[0.12em] uppercase text-amber bg-[#050505]/70 backdrop-blur-sm px-2 py-1 border border-[#1f1f1f]">
-                    {project.type}
+                  </div>
+                  <span className="project-visit">
+                    <ArrowUpRight aria-hidden="true" size={21} />
                   </span>
                 </a>
-
-                {/* Card body */}
-                <div className="p-6 sm:p-8 flex flex-col gap-4 flex-1">
-                  {/* Header */}
-                  <div className="project-header">
-                    <h3 className="project-name text-xl font-bold font-display group-hover:text-accent transition-colors duration-200">
-                      {project.title}
-                    </h3>
-                    <div className="project-links flex gap-2 shrink-0">
-                      {project.github && (
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-mono text-[0.6rem] tracking-[0.1rem] uppercase text-[#9ca3af] border border-[#1f1f1f] px-2 py-0.5 hover:border-accent hover:text-accent transition-all duration-200"
-                        >
-                          Source
-                        </a>
-                      )}
-                      {project.url && (
-                        <a
-                          href={project.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-mono text-[0.6rem] tracking-[0.1rem] uppercase text-[#9ca3af] border border-[#1f1f1f] px-2 py-0.5 hover:border-accent hover:text-accent transition-all duration-200"
-                        >
-                          Live ↗
-                        </a>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Description */}
-                  <p className="project-desc text-[0.9rem] text-[#d1d5db] leading-[1.65] font-sans">
-                    {project.description}
-                  </p>
-
-                  {/* Highlights */}
-                  <ul className="project-bullets">
-                    {project.highlights.map((highlight) => (
-                      <li key={highlight}>{highlight}</li>
-                    ))}
-                  </ul>
-
-                  {/* Tech footer */}
-                  <div className="project-footer border-t border-[#1f1f1f] pt-4 mt-auto">
-                    <p className="project-lang font-mono text-[0.62rem] text-[#9ca3af]">
-                      {project.tech.join(" · ")}
+                <div className="project-caption">
+                  <p className="small-label">{item.category}</p>
+                  <a href={project.url} target="_blank" rel="noreferrer">
+                    <h3>{project.title}</h3>
+                    <ArrowUpRight aria-hidden="true" size={22} />
+                  </a>
+                  <p className="project-summary">{item.summary}</p>
+                  <details className="project-notes">
+                    <summary>
+                      My contribution <span aria-hidden="true">+</span>
+                    </summary>
+                    <p className="project-contribution">
+                      {project.contribution}
                     </p>
+                  </details>
+                  <div className="project-meta">
+                    <span>{item.outcome}</span>
+                    <span>{item.tags.join(" / ")}</span>
                   </div>
                 </div>
-              </motion.article>
+              </article>
             );
           })}
-        </motion.div>
+        </div>
+        <details className="project-archive">
+          <summary>
+            <span>
+              More from the archive{" "}
+              <span className="archive-count">
+                {String(archive.length).padStart(2, "0")}
+              </span>
+            </span>
+            <span className="details-toggle" aria-hidden="true">
+              +
+            </span>
+          </summary>
+          <div className="archive-list">
+            {archive.map((project) => (
+              <article key={project.title}>
+                <div>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <span className="small-label">
+                    {project.tech.join(" / ")}
+                  </span>
+                </div>
+                <div className="archive-links">
+                  <a
+                    className="text-link"
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View project
+                    <ArrowUpRight aria-hidden="true" size={17} />
+                  </a>
+                  {project.github && (
+                    <a
+                      className="text-link"
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Source
+                      <ArrowUpRight aria-hidden="true" size={17} />
+                    </a>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        </details>
       </div>
     </section>
   );
