@@ -199,7 +199,6 @@ h2 {
 }
 h1 em,
 h2 em {
-  font-family: var(--font-editorial);
   font-weight: 400;
   letter-spacing: -0.035em;
 }
