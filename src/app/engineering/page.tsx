@@ -5,6 +5,7 @@ import { ArrowUpRight, ArrowRight } from "lucide-react";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import TechStack from "@/components/TechStack";
+import SectionNav from "@/components/SectionNav";
 import { personalInfo } from "@/data/portfolio";
 
 const title = "Frontend Engineering — Tomiwa Ajayi";
@@ -59,17 +60,25 @@ export default function EngineeringPage() {
               <ArrowUpRight size={17} aria-hidden="true" />
             </a>
           </div>
+          <SectionNav
+            links={[
+              { href: "#projects", label: "Projects" },
+              { href: "#experience", label: "Experience" },
+              { href: "#skills", label: "Skills" },
+            ]}
+          />
         </div>
       </section>
       <Projects />
       <Experience />
       <section
+        id="skills"
         className="section container engineering-toolkit"
         aria-label="Engineering tools"
       >
-        <p className="section-kicker">Tools of the trade</p>
+        <p className="section-kicker">How I build</p>
         <h2>
-          A considered <em>toolkit.</em>
+          Skills & <em>tools.</em>
         </h2>
         <TechStack />
       </section>

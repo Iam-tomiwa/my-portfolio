@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight, ArrowRight } from "lucide-react";
 import Publications from "@/components/Publications";
+import SectionNav from "@/components/SectionNav";
 import {
   BreadcrumbSchema,
   PublicationsSchema,
@@ -11,7 +12,7 @@ import { personalInfo, publications } from "@/data/portfolio";
 
 const title = "Microbiology & Bioinformatics Research — Tomiwa Ajayi";
 const description =
-  "Ajayi Emmanuel Tomiwa's academic portfolio: first-class Microbiology graduate, bioinformatics research, genome annotation, publications, and graduate assistant at UNILAG.";
+  "Ajayi Emmanuel Tomiwa's academic portfolio: first-class Microbiology graduate, bioinformatics research, genome annotation, publications, and research experience at UNILAG.";
 export const metadata: Metadata = {
   title,
   description,
@@ -51,8 +52,8 @@ export default function ResearchPage() {
             reproducible research.
           </p>
           <div className="route-actions">
-            <a className="button button-primary" href="#research">
-              Explore my research
+            <a className="button button-primary" href="#publications">
+              View publications
               <ArrowDown size={17} aria-hidden="true" />
             </a>
             <a
@@ -65,6 +66,13 @@ export default function ResearchPage() {
               <ArrowUpRight size={17} aria-hidden="true" />
             </a>
           </div>
+          <SectionNav
+            links={[
+              { href: "#publications", label: "Publications" },
+              { href: "#research-experience", label: "Experience" },
+              { href: "#education", label: "Education & tools" },
+            ]}
+          />
         </div>
         <figure className="research-art">
           <a

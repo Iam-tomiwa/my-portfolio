@@ -7,7 +7,7 @@ const selected = [
   {
     index: 0,
     category: "Medical mycology & training",
-    summary: "A reference lab, its strains, and the people it trains.",
+    summary: "I built a searchable fungal strain catalogue and a learning platform with verifiable course certificates.",
     image: "/projects/mrl-nigeria.webp",
     imageAlt:
       "MRL Nigeria homepage introducing the laboratory's fungal diagnostics and research work",
@@ -18,7 +18,7 @@ const selected = [
   {
     index: 2,
     category: "Entertainment & education",
-    summary: "A new foundation for African storytelling.",
+    summary: "I led the frontend migration, rebuilt the admin panel, and shipped a children’s typing game.",
     image: "/projects/raptures.webp",
     imageAlt: "Raptures website showcasing African comics and stories",
     color: "lavender",
@@ -28,7 +28,7 @@ const selected = [
   {
     index: 1,
     category: "Public health & community",
-    summary: "Health outreach, told through its own events.",
+    summary: "I designed and built a health NGO’s website, giving its team control of events, stories, and volunteer sign-ups.",
     image: "/projects/health-enlight.webp",
     imageAlt:
       "The Health enLight Initiative homepage with a stack of upcoming event cards",
@@ -39,7 +39,7 @@ const selected = [
   {
     index: 4,
     category: "IoT & connected products",
-    summary: "Making connected lighting easier to discover.",
+    summary: "I built a wireless lighting product catalogue with a content management system and CRM integration.",
     image: "/projects/illumra-detail.webp",
     imageAlt: "ILLUMRA wireless lighting controls product website",
     color: "blue",
@@ -49,7 +49,7 @@ const selected = [
   {
     index: 3,
     category: "Manufacturing & operations",
-    summary: "From a custom order to the factory floor.",
+    summary: "I built connected sales, factory, and admin portals to manage custom glass orders from quote to delivery.",
     image: "/projects/glasstronictech.webp",
     imageAlt:
       "Glasstronic Technologies website showing engineered glass for modern construction",
@@ -60,7 +60,7 @@ const selected = [
   {
     index: 5,
     category: "Architecture & interiors",
-    summary: "A digital space with a sense of place.",
+    summary: "I designed and built an architecture studio’s portfolio with responsive layouts and scroll-driven animation.",
     image: "/projects/timtechville.webp",
     imageAlt: "TimTechVille architecture and interior design portfolio",
     color: "sage",
@@ -82,15 +82,13 @@ export default function Projects() {
       <div className="container">
         <div className="section-heading">
           <div>
-            <p className="section-kicker">Selected work</p>
+            <p className="section-kicker">Built & shipped</p>
             <h2 id="work-title">
-              Less talk. <em>More shipped.</em>
+              Selected <em>projects.</em>
             </h2>
           </div>
           <p>
-            A few things I’ve helped bring to life.
-            <br />
-            Real products, real constraints, thoughtful solutions.
+            What I built, the tools behind it, and the results.
           </p>
         </div>
         <div className="project-grid">
@@ -129,7 +127,9 @@ export default function Projects() {
                   <p className="project-summary">{item.summary}</p>
                   <details className="project-notes">
                     <summary>
-                      My contribution <span aria-hidden="true">+</span>
+                      Project details
+                      <span className="sr-only">: {project.title}</span>
+                      <span aria-hidden="true">+</span>
                     </summary>
                     <p className="project-contribution">
                       {project.contribution}
