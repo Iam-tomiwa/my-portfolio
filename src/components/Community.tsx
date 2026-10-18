@@ -12,15 +12,13 @@ export default function Community() {
       <div className="container">
         <div className="section-heading">
           <div>
-            <p className="section-kicker">Where I show up</p>
+            <p className="section-kicker">In the community</p>
             <h2 id="community-title">
-              Four rooms. <em>One habit.</em>
+              Teaching & <em>outreach.</em>
             </h2>
           </div>
           <p>
-            Workshops, webinars, tutorials and outreach.
-            <br />
-            The work that only counts once someone else can use it.
+            Workshops, student mentoring, and public health programmes.
           </p>
         </div>
         <div className="community-list">
@@ -38,32 +36,6 @@ export default function Community() {
               </div>
               <div className="community-body">
                 <p className="community-summary">{item.summary}</p>
-                <ul>
-                  {item.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
-                {item.talks && (
-                  <div className="community-talks">
-                    <h4 className="small-label">Sessions I led</h4>
-                    <ul>
-                      {item.talks.map((talk) => (
-                        <li key={talk}>{talk}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-                {item.link && (
-                  <a
-                    className="text-link"
-                    href={item.link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {item.link.label}
-                    <ArrowUpRight size={17} aria-hidden="true" />
-                  </a>
-                )}
                 {item.images && (
                   <div
                     className={`community-photos community-photos--${item.images.length}`}
@@ -79,6 +51,39 @@ export default function Community() {
                       </figure>
                     ))}
                   </div>
+                )}
+                <details className="community-details">
+                  <summary>
+                    Activities & outcomes
+                    <span className="sr-only">: {item.organisation}</span>
+                    <span aria-hidden="true">+</span>
+                  </summary>
+                  <ul>
+                    {item.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                  {item.talks && (
+                    <div className="community-talks">
+                      <h4 className="small-label">Sessions I led</h4>
+                      <ul>
+                        {item.talks.map((talk) => (
+                          <li key={talk}>{talk}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </details>
+                {item.link && (
+                  <a
+                    className="text-link"
+                    href={item.link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {item.link.label}
+                    <ArrowUpRight size={17} aria-hidden="true" />
+                  </a>
                 )}
               </div>
             </article>

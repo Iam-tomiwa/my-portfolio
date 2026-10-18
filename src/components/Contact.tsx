@@ -15,9 +15,7 @@ export default function Contact() {
         </div>
         <div className="contact-heading">
           <h2>
-            Good things start
-            <br />
-            with a <em>conversation.</em>
+            Let’s <em>talk.</em>
           </h2>
           <a
             className="contact-arrow"
@@ -48,7 +46,11 @@ export default function Contact() {
               <ArrowUpRight size={17} aria-hidden="true" />
             </a>
             <a href={personalInfo.resumeUrl} target="_blank" rel="noreferrer">
-              Résumé
+              Engineering résumé
+              <ArrowUpRight size={17} aria-hidden="true" />
+            </a>
+            <a href={personalInfo.academicCvUrl} target="_blank" rel="noreferrer">
+              Academic CV
               <ArrowUpRight size={17} aria-hidden="true" />
             </a>
           </div>

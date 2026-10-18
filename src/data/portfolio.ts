@@ -24,6 +24,8 @@ export interface Education {
 
 export interface Publication {
   title: string;
+  /** Short topic label; the full bibliographic title remains in the citation. */
+  shortTitle: string;
   authors: string;
   journal: string;
   date: string;
@@ -93,6 +95,16 @@ export const education: Education = {
 
 export const publications: Publication[] = [
   {
+    title: "Draft genome sequences of Bacillus benzoevorans DSM 5391T and Bacillus oleivorans JC228",
+    shortTitle: "Draft genomes of two Bacillus species",
+    authors: "Nsa, I. Y., Adeniyi, Q. A., Adisa, O. I., Mojirayo, S. O., Oyekunle, D. O., Ajayi, E. T., Pukall, R., Spunde, A., Mukherjee, S., Göker, M., & Seshadri, R.",
+    journal: "Microbiology Resource Announcements",
+    date: "2026",
+    link: "https://doi.org/10.1128/mra.00719-26",
+    highlight: "Co-authored a genome report on two Bacillus species that can break down hydrocarbons.",
+  },
+  {
+    shortTitle: "Kenaf fibre as an alternative to single-use plastics",
     title:
       "A Review of Hibiscus cannabinus L. (Kenaf) Fibre as a Sustainable Alternative to Enhance Regulatory Efforts against Expanded Polystyrene Foam and Single-Use Plastics in Nigeria",
     authors:
@@ -106,17 +118,19 @@ export const publications: Publication[] = [
   {
     title:
       "Genome Sequences of Streptomyces Cluster BE2 phages CeilingFan and Mugiwara",
+    shortTitle: "The genomes of CeilingFan and Mugiwara",
     authors:
       "Nsa, I. Y., Ejiofor, E., Ajayi, E., Okoli, I., Uchegbu, C., Aworetan, O., Jebe-Abdullahi, F., Kamselem, H., Abidoye, S., Oleka, E., Okupa, O., Lawal, F., Immanuel, G., Tomi, E., Faith, O., Akpederi, G., Adisa, F., Modesola, O., Burodo, C., Madu, J., & Ilori, M.",
     journal: "microPublication Biology",
     date: "2026",
     link: "https://doi.org/10.17912/micropub.biology.001971",
     highlight:
-      "Annotated and characterized mycobacteriophages CeilingFan and Mugiwara, identifying key genomic sequences.",
+      "Annotated and characterized Streptomyces phages CeilingFan and Mugiwara, identifying key genomic sequences.",
   },
   {
     title:
       "Bacterial Detection in Corrosive Media and Assessment of Corrosion Inhibition Efficiency of Novel Paints",
+    shortTitle: "Microbial communities and corrosion-resistant paints",
     authors:
       "Obidi, O. F., Raheem, I. A., Tijani, A. O., Adejare-Kuti, B. M., Sumaila, O. R., Ajayi, E., ... & Yekini, A. A.",
     journal: "Journal of Engineering Research (JER)",
@@ -134,6 +148,7 @@ export const skills: SkillCategory[] = [
       "TypeScript",
       "JavaScript (ES6+)",
       "Python",
+      "R",
       "HTML5",
       "CSS3",
       "Markdown",
@@ -325,13 +340,13 @@ export const academicExperience: WorkExperience[] = [
     role: "Graduate Research Assistant (NYSC)",
     company: "SEAPHAGES Laboratory - Central Research Lab, UNILAG",
     location: "Lagos, Nigeria",
-    date: "July 2025 - Present",
+    date: "July 2025 - June 2026",
     type: "Research",
     bullets: [
       "Lead Facilitator for 'The Bioinformatics Bridge 1.0,' a 2-day faculty-wide training for Faculty of Life Sciences, University of Lagos, designing digital assets and coordinating logistics for over 40 participants.",
       "Delivered technical workshops on 'Creating Reproducible Genome Analysis Workflows with KBase' and 'Python as a Computational Skill,' introducing Biopython to enhance staff research efficiency.",
       "Assisted in teaching undergraduate students on genome annotation fundamentals, mastering tools including DNA Master, KBase, and GeneMark to process draft genomes during the summer.",
-      "Optimizing laboratory research workflows by integrating computational skills and data collation methods for current research projects.",
+      "Optimized laboratory research workflows by integrating computational skills and data collation methods for research projects.",
     ],
     tech: [
       "Bioinformatics",
@@ -348,12 +363,12 @@ export const academicExperience: WorkExperience[] = [
     date: "January 2024 - August 2024",
     type: "Research",
     bullets: [
-      "Annotated and characterized a novel Mycobacteriophage (Ceilingfan) draft genome using DNA Master, NCBI, Phamerator, HHPred, and Aragorn.",
+      "Annotated and characterized the Streptomyces phage CeilingFan draft genome using DNA Master, NCBI, Phamerator, HHPred, and Aragorn.",
       "Coordinated data collation of the annotated files across the research group.",
       "Led a team to perform gene content comparison of 3 phages in subcluster F1, writing a Python-based gene content similarity script with a poster.",
     ],
     tech: [
-      "Mycobacteriophages",
+      "Streptomyces phages",
       "DNA Master",
       "Phamerator",
       "Python Scripting",
@@ -423,7 +438,7 @@ export const community: CommunityEngagement[] = [
     location: "Lagos, Nigeria",
     date: "August 2025 - Present",
     summary:
-      "I run the programme calendar for a health-enlightenment NGO, and built the site it now lives on.",
+      "I coordinate monthly health webinars and school outreach, including training 20 student health ambassadors.",
     bullets: [
       "Organise and coordinate the monthly health webinars on X Spaces and Google Meet, drawing 10-80 live attendees per session.",
       "Design the flyers and assets, collaborating with media team, on improving social media engagement.",
@@ -432,7 +447,7 @@ export const community: CommunityEngagement[] = [
     ],
     link: {
       label: "Visit the site",
-      href: "https://health-enlight-initiative.vercel.app/",
+      href: "https://thehealthenlightinitiative.org/",
     },
     images: [
       {
@@ -446,7 +461,7 @@ export const community: CommunityEngagement[] = [
     organisation: "The Bioinformatics Bridge (BioBridge) 1.0",
     location: "Faculty of Life Sciences, University of Lagos",
     summary:
-      "A two-day, faculty-wide bioinformatics training. I coordinated the people and the logistics, and taught two of the sessions.",
+      "A two-day bioinformatics workshop for over 40 participants. I coordinated the facilitators and logistics, and taught two sessions.",
     bullets: [
       "Coordinated the other facilitators and ran logistics for over 40 participants.",
       "Designed the digital assets used across the workshop.",
@@ -490,7 +505,7 @@ export const community: CommunityEngagement[] = [
   {
     role: "Student Mentor",
     organisation:
-      "National Association of Microbiology Students (NAMS), UNILAG Chapter",
+      "National Association of Microbiology Students (NAMS), Southwest Region",
     location: "Lagos, Nigeria",
     date: "July 2022 - August 2024",
     summary:
@@ -506,6 +521,26 @@ export const community: CommunityEngagement[] = [
         src: "/images/nams-executives.webp",
         alt: "Tomiwa with fellow NAMS executives at a University of Lagos microbiology student event",
       },
+    ],
+  },
+  {
+    role: "Academic Student Secretary",
+    organisation: "GOFAMINT Student Fellowship (GSF)",
+    date: "July 2023 - July 2024",
+    summary: "Led a 12-person team supporting the academic growth of more than 100 students.",
+    bullets: [
+      "Organised four academic meetings, including a session to help first-year students settle into university.",
+      "Facilitated weekly talks on time management and study techniques, alongside individual mentorship.",
+    ],
+  },
+  {
+    role: "Member",
+    organisation: "Education in Charlotte and Lagos (EDUCHALA)",
+    date: "October 2021 - August 2024",
+    summary: "Collaborated with students at the University of North Carolina, Charlotte, on soil microbiology research.",
+    bullets: [
+      "Characterised and compared microbial communities in soil samples from Lagos and Charlotte.",
+      "Led a team presentation introducing Nigerian culture, history, and traditions to students in Charlotte.",
     ],
   },
 ];
@@ -535,7 +570,7 @@ export const projects: Project[] = [
     description:
       "Website for a Nigerian health-enlightenment NGO: programme archive, upcoming events, volunteer intake, and an editorial story told through the organisation's own photography.",
     type: "Nonprofit / CMS Site",
-    url: "https://health-enlight-initiative.vercel.app/",
+    url: "https://thehealthenlightinitiative.org/",
     contribution:
       "As programs lead, I designed and built the site for a Nigerian health NGO beautifully telling our story. It includes Programmes, events, gallery and posts which all live in Sanity for the content team to manage themselves, and a volunteer intake form that feeds straight into the team’s Brevo CRM.",
     tech: [

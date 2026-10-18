@@ -1,14 +1,14 @@
 const toolkit = [
   {
-    title: "The everyday toolkit",
+    title: "Languages & frameworks",
     items: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
   },
   {
-    title: "Behind the interface",
+    title: "Data & content",
     items: ["TanStack Query", "Zustand", "Sanity", "GraphQL"],
   },
   {
-    title: "The finer details",
+    title: "Interaction & architecture",
     items: ["GSAP", "Framer Motion", "Responsive UI", "Frontend architecture"],
   },
 ];

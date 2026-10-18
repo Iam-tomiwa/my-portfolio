@@ -55,9 +55,9 @@ export default function Experience() {
       <div className="container">
         <div className="section-heading">
           <div>
-            <p className="section-kicker">The journey so far</p>
+            <p className="section-kicker">Roles & responsibilities</p>
             <h2 id="experience-title">
-              Experience that <em>adds up.</em>
+              Engineering <em>experience.</em>
             </h2>
           </div>
           <a
@@ -66,7 +66,7 @@ export default function Experience() {
             target="_blank"
             rel="noreferrer"
           >
-            The full résumé
+            View engineering résumé
             <ArrowUpRight size={18} aria-hidden="true" />
           </a>
         </div>

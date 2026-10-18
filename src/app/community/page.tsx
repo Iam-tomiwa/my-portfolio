@@ -34,9 +34,8 @@ export default function CommunityPage() {
         </div>
         <div className="route-hero-copy">
           <p>
-            Some of the most useful work I do pays nothing. Facilitating
-            workshops, running health programmes, mentoring students, and
-            turning up for public health outreach in Lagos.
+            I teach bioinformatics, mentor students, and help run health
+            programmes in Lagos. Here are the communities I contribute to.
           </p>
           <div className="route-actions">
             <a className="button button-primary" href="#community">
